@@ -20,3 +20,7 @@ a, input, textarea {
   font-size: inherit;
   font-family: inherit;
 }
+
+i, cite, em, var, address, dfn {
+    font-style: inherit;
+}

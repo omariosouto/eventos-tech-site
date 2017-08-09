@@ -1,0 +1,49 @@
+:root { --event-item-width: 70%; }
+
+.event {
+    margin: 24px var(--gutter-standard);
+    border: 2px solid #FFF;
+    overflow: hidden;
+}
+
+.event-header {
+    padding: var(--gutter-standard);
+    border-bottom: 2px solid #FFF;
+    overflow: hidden;
+    font-size: 1.3em;
+}
+.event-header-day {
+    float: left;
+}
+.event-header-location {
+    float: right;
+}
+
+
+.event-logo {
+    float: right;
+    width: calc( 100% - var(--event-item-width) );
+}
+
+
+.event-title,
+.event-description,
+.event-footer {
+    width: calc( var(--event-item-width) - 24px );
+    padding: 0 var(--gutter-standard);
+    margin-bottom: var(--gutter-standard);
+}
+
+.event-title {
+    font-size: 1.8em;
+    padding-top: var(--gutter-standard);
+    padding-bottom: var(--gutter-standard);
+}
+.event-description {
+    font-size: 1.6em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
