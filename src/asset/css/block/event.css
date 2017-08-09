@@ -19,12 +19,17 @@
     float: right;
 }
 
-
 .event-logo {
     float: right;
     width: calc( 100% - var(--event-item-width) );
 }
-
+@media (max-width: 480px) {
+    .event-logo {
+        float: none;
+        margin: auto;
+        display: block;
+    }
+}
 
 .event-title,
 .event-description,
@@ -33,7 +38,13 @@
     padding: 0 var(--gutter-standard);
     margin-bottom: var(--gutter-standard);
 }
-
+@media (max-width: 481px) {
+    .event-title,
+    .event-description,
+    .event-footer {
+        width: auto;
+    }
+}
 .event-title {
     font-size: 1.8em;
     padding-top: var(--gutter-standard);
