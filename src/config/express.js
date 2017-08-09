@@ -7,6 +7,8 @@ nunjucks.configure('view', {
   express: app
 })
 
+app.use(express.static('./asset'))
+
 app.get('/', (req, res) => res.render('index.html'))
 
 module.exports = app
