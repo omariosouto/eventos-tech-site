@@ -1,0 +1,73 @@
+.event {
+  font-size: 12px;
+  padding: 38px 15px;
+  border-bottom: 2px solid rgba(183, 183, 183, 0.8);
+}
+
+.event__time {
+  margin-left: 2px;
+}
+
+.event__name {
+  font-size: 2.5em;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.68);
+}
+
+.event__address {
+  font-size: 1.166em;
+  font-style: normal;
+}
+
+.event__address__city {
+  font-weight: normal;
+  font-size: 1.142em;
+  color: #6b6e74;
+  display: block;
+}
+
+.event__menu {
+  margin-top: 10px;
+}
+
+.event__menu__item {
+  margin-right: 25px;
+}
+
+.event__category {
+  text-indent: -9999px;
+  width: 3px;
+  height: 20px;
+  float: right;
+  margin-bottom: 40px;
+}
+
+.event__ticket {
+  color: white;
+  width: 40px;
+  height: 25px;
+  text-align: center;
+  line-height: 25px;
+  float: right;
+  clear: right;
+}
+
+.event__category--frontend {
+  background-color: #5ab9e7;
+}
+
+.event__category--agile {
+  background-color: #6d9fa5;
+  }
+
+.event__category--design {
+  background-color: #e774a0;
+}
+
+.event__ticket--free {
+  background-color: #83cf71;
+}
+
+.event__ticket--payment {
+  background-color: #efae4c;
+}
