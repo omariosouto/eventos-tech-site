@@ -44,20 +44,6 @@
   overflow: hidden;
 }
 
-.menu__item--isActive::before {
-  content: "";
-  display: block;
-  width: 10px;
-  height: 10px;
-  background-color: #fff;
-  border-radius: 50%;
-  position: absolute;
-  top: -5px;
-  left: 50%;
-  transform: translateX(-50%);
-  box-shadow: 0px 2px 4px white;
-}
-
 .menu__item--evento {
   background-image: url(../../img/block/menu/calendar.svg);
 }
