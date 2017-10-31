@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Novo Evento</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/block/header.css">
+    <link rel="stylesheet" href="css/block/event.css">
+    <link rel="stylesheet" href="css/block/menu.css">
+    <link rel="stylesheet" href="css/block/date.css">
+    <link rel="stylesheet" href="css/block/menuFilter.css">
+    <link rel="stylesheet" href="css/block/menuAdd.css">
+    <link rel="stylesheet" href="css/block/new-event.css">
+  </head>
+  <body>
+    <header class="newEvent">
+      <img class="newEvent__imagem" src="img/icon-previous-dark.svg" alt="Voltar para menu">
+      <label class="newEvent__label">Cadastro de Evento</label>
+    </header>
+
+    <form class="formNewEvent" action="index.html" method="post">
+
+      <section class="wrap__inscricoes">
+        <fieldset class="inscricoes">
+          <legend class="inscricoes__title">Inscrições</legend>
+
+          <input type="radio" name="titleIncricao" value="free" id="free" class="inscricoes__radio inscricoes__radio--free">
+          <label for="free" class="inscricoes__label inscricoes__label--free">
+            Free
+          </label>
+
+          <input type="radio" name="titleIncricao" value="payment" id="payment" class="inscricoes__radio inscricoes__radio--payment">
+          <label for="payment" class="inscricoes__label inscricoes__label--payment">
+            Pago
+          </label>
+        </fieldset>
+      </section>
+
+
+
+
+
+
+
+    </form>
+
+    <footer class="footerNewEvent">
+      <button class="footerNewEvent__button">Próximo</button>
+      <img class="footerNewEvent__img" src="img/icon-next-white.svg" alt="Ir para próximo menu">
+    </footer>
+  </body>
+</html>
