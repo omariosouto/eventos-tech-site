@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="20px" viewBox="0 0 22 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>581CF044-7B36-4761-BC8D-AD9345CD815C</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <path d="M5.65217391,0 C2.53565217,0 0,2.53565217 0,5.65217391 C0,12.0704348 7.25826087,15.2378261 9.72826087,17.296087 L10,17.5273913 L10.2717391,17.296087 C12.7417391,15.2378261 20,12.07 20,5.65217391 C20,2.53565217 17.4643478,0 14.3478261,0 C12.5843478,0 11.0365217,0.836956522 10,2.10608696 C8.96347826,0.836521739 7.41565217,0 5.65217391,0 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="home-like" transform="translate(-78.000000, -189.000000)">
+            <g id="event" transform="translate(60.000000, 59.000000)">
+                <g id="wrap__event" transform="translate(19.000000, 33.000000)">
+                    <g id="event__like" transform="translate(0.000000, 98.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="like-shape" stroke="#F19680" fill="#F19680" fill-rule="nonzero" xlink:href="#path-1"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

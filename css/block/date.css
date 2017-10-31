@@ -2,7 +2,7 @@
   position: fixed;
   left: 0;
   top: 0;
-  border-right: 1px solid rgba(183, 183, 183, 0.8);
+  border-right: 1px solid var(--border);
   overflow: auto;
   height: 100vh;
   padding-top: 60px;
@@ -11,7 +11,7 @@
 .date__item {
   font-size: 12px;
   font-weight: 300;
-  background-color: #fff;
+  background-color: var(--white);
   width: 60px;
   height: 60px;
   padding: 5px 0;
@@ -29,6 +29,6 @@
 .date__item--isActive {
   position: fixed;
   top: 0;
-  background-color: #7781a3;
-  color: #fff;
+  background-color: var(--menu);
+  color: var(--white);
 }

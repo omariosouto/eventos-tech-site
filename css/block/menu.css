@@ -6,11 +6,11 @@
 }
 
 .menu {
-  background-color: #7781a3;
+  background-color: var(--menu);
   box-sizing: border-box;
   height: 50px;
   font-size: 12px;
-  color: #fff;
+  color: var(--white);
   text-align: justify;
   padding: 0 30px 0 90px;
 }
@@ -28,7 +28,7 @@
 }
 
 .menu__item--add {
-  background-color: #46c2ab;
+  background-color: var(--add);
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.36);
   font-size: 30px;
   position: absolute;
@@ -45,27 +45,27 @@
 }
 
 .menu__item--evento {
-  background-image: url(../../img/block/menu/calendar.svg);
+  background-image: url(../../img/block/menu/menu-calendar.svg);
 }
 
 .menu__item--isActive.menu__item--evento {
-  background-image: url(../../img/block/menu/calendar--isActive.svg);
+  background-image: url(../../img/block/menu/menu-calendar--isActive.svg);
 }
 
 .menu__item--like {
-  background-image: url(../../img/block/menu/like.svg);
+  background-image: url(../../img/block/menu/menu-like.svg);
 }
 
 .menu__item--isActive.menu__item--like {
-  background-image: url(../../img/block/menu/like--isActive.svg);
+  background-image: url(../../img/block/menu/menu-like--isActive.svg);
 }
 
 .menu__item--perfil {
-  background-image: url(../../img/block/menu/profile.svg);
+  background-image: url(../../img/block/menu/menu-profile.svg);
 }
 
 .menu__item--isActive.menu__item--perfil {
-  background-image: url(../../img/block/menu/profile--isActive.svg);
+  background-image: url(../../img/block/menu/menu-profile--isActive.svg);
 }
 
 .linhaFinal {

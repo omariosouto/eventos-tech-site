@@ -1,207 +1,286 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Calendário de eventos</title>
+    <title>Calendário de eventos</title>
 
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/basic.css">
-  <link rel="stylesheet" href="css/block/header.css">
-  <link rel="stylesheet" href="css/block/event.css">
-  <link rel="stylesheet" href="css/block/menu.css">
-  <link rel="stylesheet" href="css/block/date.css">
-</head>
-<body>
-  <header class="header">
-    <ol class="header__month">
-      <li class="header__month__item">Janeiro</li>
-      <li class="header__month__item">Fevereiro</li>
-      <li class="header__month__item">Março</li>
-      <li class="header__month__item">Abril</li>
-      <li class="header__month__item">Maio</li>
-      <li class="header__month__item">Junho</li>
-      <li class="header__month__item">Julho</li>
-      <li class="header__month__item">Agosto</li>
-      <li class="header__month__item">Setembro</li>
-      <li class="header__month__item header__month__item--isActive">Outubro</li>
-      <li class="header__month__item">Novembro</li>
-      <li class="header__month__item">Dezembro</li>
-    </ol>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/block/header.css">
+    <link rel="stylesheet" href="css/block/event.css">
+    <link rel="stylesheet" href="css/block/menu.css">
+    <link rel="stylesheet" href="css/block/date.css">
+    <link rel="stylesheet" href="css/block/menuFilter.css">
+    <link rel="stylesheet" href="css/block/menuAdd.css">
+  </head>
+  <body>
+    <header class="header">
+      <ol class="header__month">
+        <li class="header__month__item">Janeiro</li>
+        <li class="header__month__item">Fevereiro</li>
+        <li class="header__month__item">Março</li>
+        <li class="header__month__item">Abril</li>
+        <li class="header__month__item">Maio</li>
+        <li class="header__month__item">Junho</li>
+        <li class="header__month__item">Julho</li>
+        <li class="header__month__item">Agosto</li>
+        <li class="header__month__item">Setembro</li>
+        <li class="header__month__item header__month__item--isActive">Outubro</li>
+        <li class="header__month__item">Novembro</li>
+        <li class="header__month__item">Dezembro</li>
+      </ol>
 
-    <img class="header__filter" src="img/header-filter.svg" alt="Icone para entrar nos filtros">
-  </header>
+      <img class="header__filter" src="img/header-filter.svg" alt="Icone para entrar nos filtros">
+    </header>
 
-  <section class="wrap__date">
-    <ol class="date">
-      <li class="date__item date__item--isActive"><strong class="date__item__number">14</strong> out</li>
-      <li class="date__item"><strong class="date__item__number">15</strong> out</li>
-      <li class="date__item"><strong class="date__item__number">16</strong> out</li>
-      <li class="date__item"><strong class="date__item__number">17</strong> out</li>
-      <li class="date__item"><strong class="date__item__number">18</strong> out</li>
-      <li class="date__item"><strong class="date__item__number">19</strong> out</li>
-      <li class="date__item"><strong class="date__item__number">20</strong> out</li>
-      <li class="date__item"><strong class="date__item__number">21</strong> out</li>
-      <li class="date__item"><strong class="date__item__number">22</strong> out</li>
-      <li class="date__item"><strong class="date__item__number">23</strong> out</li>
-      <li class="date__item"><strong class="date__item__number">24</strong> out</li>
-      <li class="date__item"><strong class="date__item__number">25</strong> out</li>
-      <li class="date__item"><strong class="date__item__number">26</strong> out</li>
-      <li class="date__item"><strong class="date__item__number">27</strong> out</li>
-    </ol>
-  </section>
+    <section class="wrap__date">
+      <ol class="date">
+        <li class="date__item date__item--isActive"><strong class="date__item__number">14</strong> out</li>
+        <li class="date__item"><strong class="date__item__number">15</strong> out</li>
+        <li class="date__item"><strong class="date__item__number">16</strong> out</li>
+        <li class="date__item"><strong class="date__item__number">17</strong> out</li>
+        <li class="date__item"><strong class="date__item__number">18</strong> out</li>
+        <li class="date__item"><strong class="date__item__number">19</strong> out</li>
+        <li class="date__item"><strong class="date__item__number">20</strong> out</li>
+        <li class="date__item"><strong class="date__item__number">21</strong> out</li>
+        <li class="date__item"><strong class="date__item__number">22</strong> out</li>
+        <li class="date__item"><strong class="date__item__number">23</strong> out</li>
+        <li class="date__item"><strong class="date__item__number">24</strong> out</li>
+        <li class="date__item"><strong class="date__item__number">25</strong> out</li>
+        <li class="date__item"><strong class="date__item__number">26</strong> out</li>
+        <li class="date__item"><strong class="date__item__number">27</strong> out</li>
+      </ol>
+    </section>
 
-  <section class="wrap__event">
-    <dl class="event">
-      <dd class="event__category event__category--frontend">FrontEnd</dd>
-      <dd class="event__category event__category--agile">Agile</dd>
-      <dd class="event__category event__category--design">Design</dd>
-      <dd class="event__ticket event__ticket--free">Free</dd>
+    <section class="wrap__event">
+      <dl class="event">
+        <dd class="event__category event__category--frontend">FrontEnd</dd>
+        <dd class="event__category event__category--agile">Agile</dd>
+        <dd class="event__category event__category--design">Design</dd>
+        <dd class="event__ticket event__ticket--free">Free</dd>
 
-      <dd class="event__time">
-        <time>08:00</time>
-        -
-        <time>19:00</time>
-      </dd>
+        <dd class="event__time">
+          <time>08:00</time>
+          -
+          <time>19:00</time>
+        </dd>
 
-      <dt class="event__name">FrontInSampa</dt>
+        <dt class="event__name">FrontInSampa</dt>
 
-      <dd>
-        <address class="event__address">
-          Teatro do Hotel Maksoud Plaza
-          <strong class="event__address__city">São Paulo - SP</strong>
-        </address>
-      </dd>
+        <dd>
+          <address class="event__address">
+            Teatro do Hotel Maksoud Plaza
+            <strong class="event__address__city">São Paulo - SP</strong>
+          </address>
+        </dd>
 
-      <dd>
-        <nav class="event__menu">
-          <img class="event__menu__item" src="img/block/event/like.svg" alt="icone para curtir">
-          <img class="event__menu__item" src="img/block/event/share.svg" alt="icone para compartilhar">
-        </nav>
-      </dd>
-    </dl>
+        <dd>
+          <nav class="event__menu">
+            <img class="event__menu__item" src="img/block/event/event-like.svg" alt="icone para curtir">
+            <img class="event__menu__item" src="img/block/event/event-share.svg" alt="icone para compartilhar">
+          </nav>
+        </dd>
+      </dl>
 
-    <dl class="event">
-      <dd class="event__category event__category--frontend">FrontEnd</dd>
-      <dd class="event__ticket event__ticket--payment">Pago</dd>
+      <dl class="event">
+        <dd class="event__category event__category--frontend">FrontEnd</dd>
+        <dd class="event__ticket event__ticket--payment">Pago</dd>
 
-      <dd class="event__time">
-        <time>08:00</time>
-        -
-        <time>19:00</time>
-      </dd>
+        <dd class="event__time">
+          <time>08:00</time>
+          -
+          <time>19:00</time>
+        </dd>
 
-      <dt class="event__name">FrontInSampa</dt>
+        <dt class="event__name">FrontInSampa</dt>
 
-      <dd>
-        <address class="event__address">
-          Teatro do Hotel Maksoud Plaza
-          <strong class="event__address__city">São Paulo - SP</strong>
-        </address>
-      </dd>
+        <dd>
+          <address class="event__address">
+            Teatro do Hotel Maksoud Plaza
+            <strong class="event__address__city">São Paulo - SP</strong>
+          </address>
+        </dd>
 
-      <dd>
-        <nav class="event__menu">
-          <img class="event__menu__item" src="img/block/event/like.svg" alt="icone para curtir">
-          <img class="event__menu__item" src="img/block/event/share.svg" alt="icone para compartilhar">
-        </nav>
-      </dd>
-    </dl>
+        <dd>
+          <nav class="event__menu">
+            <img class="event__menu__item" src="img/block/event/event-like.svg" alt="icone para curtir">
+            <img class="event__menu__item" src="img/block/event/event-share.svg" alt="icone para compartilhar">
+          </nav>
+        </dd>
+      </dl>
 
-    <dl class="event">
-      <dd class="event__category event__category--frontend">FrontEnd</dd>
-      <dd class="event__ticket event__ticket--free">Free</dd>
+      <dl class="event">
+        <dd class="event__category event__category--frontend">FrontEnd</dd>
+        <dd class="event__ticket event__ticket--free">Free</dd>
 
-      <dd class="event__time">
-        <time>08:00</time>
-        -
-        <time>19:00</time>
-      </dd>
+        <dd class="event__time">
+          <time>08:00</time>
+          -
+          <time>19:00</time>
+        </dd>
 
-      <dt class="event__name">FrontInSampa</dt>
+        <dt class="event__name">FrontInSampa</dt>
 
-      <dd>
-        <address class="event__address">
-          Teatro do Hotel Maksoud Plaza
-          <strong class="event__address__city">São Paulo - SP</strong>
-        </address>
-      </dd>
+        <dd>
+          <address class="event__address">
+            Teatro do Hotel Maksoud Plaza
+            <strong class="event__address__city">São Paulo - SP</strong>
+          </address>
+        </dd>
 
-      <dd>
-        <nav class="event__menu">
-          <img class="event__menu__item" src="img/block/event/like.svg" alt="icone para curtir">
-          <img class="event__menu__item" src="img/block/event/share.svg" alt="icone para compartilhar">
-        </nav>
-      </dd>
-    </dl>
+        <dd>
+          <nav class="event__menu">
+            <img class="event__menu__item" src="img/block/event/event-like.svg" alt="icone para curtir">
+            <img class="event__menu__item" src="img/block/event/event-share.svg" alt="icone para compartilhar">
+          </nav>
+        </dd>
+      </dl>
 
-    <dl class="event">
-      <dd class="event__category event__category--frontend">FrontEnd</dd>
-      <dd class="event__ticket event__ticket--free">Free</dd>
+      <dl class="event">
+        <dd class="event__category event__category--frontend">FrontEnd</dd>
+        <dd class="event__ticket event__ticket--free">Free</dd>
 
-      <dd class="event__time">
-        <time>08:00</time>
-        -
-        <time>19:00</time>
-      </dd>
+        <dd class="event__time">
+          <time>08:00</time>
+          -
+          <time>19:00</time>
+        </dd>
 
-      <dt class="event__name">FrontInSampa</dt>
+        <dt class="event__name">FrontInSampa</dt>
 
-      <dd>
-        <address class="event__address">
-          Teatro do Hotel Maksoud Plaza
-          <strong class="event__address__city">São Paulo - SP</strong>
-        </address>
-      </dd>
+        <dd>
+          <address class="event__address">
+            Teatro do Hotel Maksoud Plaza
+            <strong class="event__address__city">São Paulo - SP</strong>
+          </address>
+        </dd>
 
-      <dd>
-        <nav class="event__menu">
-          <img class="event__menu__item" src="img/block/event/like.svg" alt="icone para curtir">
-          <img class="event__menu__item" src="img/block/event/share.svg" alt="icone para compartilhar">
-        </nav>
-      </dd>
-    </dl>
+        <dd>
+          <nav class="event__menu">
+            <img class="event__menu__item" src="img/block/event/event-like.svg" alt="icone para curtir">
+            <img class="event__menu__item" src="img/block/event/event-share.svg" alt="icone para compartilhar">
+          </nav>
+        </dd>
+      </dl>
 
-    <dl class="event">
-      <dd class="event__category event__category--frontend">FrontEnd</dd>
-      <dd class="event__ticket event__ticket--free">Free</dd>
+      <dl class="event">
+        <dd class="event__category event__category--frontend">FrontEnd</dd>
+        <dd class="event__ticket event__ticket--free">Free</dd>
 
-      <dd class="event__time">
-        <time>08:00</time>
-        -
-        <time>19:00</time>
-      </dd>
+        <dd class="event__time">
+          <time>08:00</time>
+          -
+          <time>19:00</time>
+        </dd>
 
-      <dt class="event__name">FrontInSampa</dt>
+        <dt class="event__name">FrontInSampa</dt>
 
-      <dd>
-        <address class="event__address">
-          Teatro do Hotel Maksoud Plaza
-          <strong class="event__address__city">São Paulo - SP</strong>
-        </address>
-      </dd>
+        <dd>
+          <address class="event__address">
+            Teatro do Hotel Maksoud Plaza
+            <strong class="event__address__city">São Paulo - SP</strong>
+          </address>
+        </dd>
 
-      <dd>
-        <nav class="event__menu">
-          <img class="event__menu__item" src="img/block/event/like.svg" alt="icone para curtir">
-          <img class="event__menu__item" src="img/block/event/share.svg" alt="icone para compartilhar">
-        </nav>
-      </dd>
-    </dl>
-  </section>
+        <dd>
+          <nav class="event__menu">
+            <img class="event__menu__item" src="img/block/event/event-like.svg" alt="icone para curtir">
+            <img class="event__menu__item" src="img/block/event/event-share.svg" alt="icone para compartilhar">
+          </nav>
+        </dd>
+      </dl>
+    </section>
 
-  <nav class="wrap__menu">
-    <ul class="menu">
-      <li class="menu__item menu__item--add">+</li>
-      <li class="menu__item menu__item--evento menu__item--isActive">Eventos</li>
-      <li class="menu__item menu__item--like">Like</li>
-      <li class="menu__item menu__item--perfil">Perfil</li>
-      <li class="linhaFinal"></li>
-    </ul>
-  </nav>
+    <nav class="wrap__menu">
+      <ul class="menu">
+        <li class="menu__item menu__item--add">+</li>
+        <li class="menu__item menu__item--evento menu__item--isActive">Eventos</li>
+        <li class="menu__item menu__item--like">Like</li>
+        <li class="menu__item menu__item--perfil">Perfil</li>
+        <li class="linhaFinal"></li>
+      </ul>
+    </nav>
 
-</body>
+    <div class="menuAdd">
+      <button class="menuAdd__button menuAdd__button--criarEvento">Criar Evento</button>
+      <button class="menuAdd__button menuAdd__button--free">Free</button>
+      <button class="menuAdd__button menuAdd__button--payment">Pago</button>
+    </div>
+
+    <section class="wrap__menuFilter wrap__menuFilter--isActive">
+      <fieldset class="menuFilter">
+        <legend class="menuFilter__title">Categorias</legend>
+
+        <input type="checkbox" name="all" id="all" class="menuFilter__checbox menuFilter__checbox--all">
+        <label for="all" class="menuFilter__label menuFilter__label--all">
+          Todas
+        </label>
+
+        <input type="checkbox" name="ux" id="ux" class="menuFilter__checbox menuFilter__checbox--ux">
+        <label for="ux" class="menuFilter__label menuFilter__label--ux">
+          UX
+        </label>
+
+        <input type="checkbox" name="design" id="design" class="menuFilter__checbox menuFilter__checbox--design">
+        <label for="design" class="menuFilter__label menuFilter__label--design">
+          Design
+        </label>
+
+        <input type="checkbox" name="frontend" id="frontend" class="menuFilter__checbox menuFilter__checbox--frontend">
+        <label for="frontend" class="menuFilter__label menuFilter__label--frontend">
+          Frontend
+        </label>
+
+        <input type="checkbox" name="backend" id="backend" class="menuFilter__checbox menuFilter__checbox--backend">
+        <label for="backend" class="menuFilter__label menuFilter__label--backend">
+          Backend
+        </label>
+
+        <input type="checkbox" name="mobile" id="mobile" class="menuFilter__checbox menuFilter__checbox--mobile">
+        <label for="mobile" class="menuFilter__label menuFilter__label--mobile">
+          Mobile
+        </label>
+
+        <input type="checkbox" name="devops" id="devops" class="menuFilter__checbox menuFilter__checbox--devops">
+        <label for="devops" class="menuFilter__label menuFilter__label--devops">
+          DevOps
+        </label>
+
+        <input type="checkbox" name="agile" id="agile" class="menuFilter__checbox menuFilter__checbox--agile">
+        <label for="agile" class="menuFilter__label menuFilter__label--agile">
+          Agile
+        </label>
+
+        <legend class="menuFilter__title">Inscrição</legend>
+
+        <input type="checkbox" name="allInscricao" id="allInscricao" class="menuFilter__checbox menuFilter__checbox--allInscricao">
+        <label for="allInscricao" class="menuFilter__label menuFilter__label--allInscricao">
+          Todas
+        </label>
+
+        <input type="checkbox" name="free" id="free" class="menuFilter__checbox menuFilter__checbox--free">
+        <label for="free" class="menuFilter__label menuFilter__label--free">
+          Free
+        </label>
+
+        <input type="checkbox" name="payment" id="payment" class="menuFilter__checbox menuFilter__checbox--payment">
+        <label for="payment" class="menuFilter__label menuFilter__label--payment">
+          Pago
+        </label>
+      </fieldset>
+
+      <button class="menuFilter__button">Filtrar</button>
+    </section>
+
+
+
+
+
+
+
+  </body>
 </html>

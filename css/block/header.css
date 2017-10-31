@@ -19,7 +19,7 @@
 .header__month::after {
   content: "";
   display: inline-block;
-  border-top: 5px solid #c5c5c5;
+  border-top: 5px solid var(--light);
   border-bottom: 5px solid transparent;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;

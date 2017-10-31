@@ -4,7 +4,7 @@
 }
 
 .event:not(:last-child) {
-  border-bottom: 1px solid rgba(183, 183, 183, 0.8);
+  border-bottom: 1px solid var(--border);
 }
 
 .event__time {
@@ -25,7 +25,7 @@
 .event__address__city {
   font-weight: normal;
   font-size: 1.142em;
-  color: #6b6e74;
+  color: var(--dark);
   display: block;
 }
 
@@ -47,7 +47,7 @@
 }
 
 .event__ticket {
-  color: white;
+  color: var(--white);
   width: 40px;
   height: 25px;
   text-align: center;
@@ -56,22 +56,46 @@
   clear: right;
 }
 
-.event__category--frontend {
-  background-color: #5ab9e7;
+.event__category--all {
+  background-color: var(--all);
 }
 
-.event__category--agile {
-  background-color: #6d9fa5;
+.event__category--ux {
+  background-color: var(--ux);
 }
 
 .event__category--design {
-  background-color: #e774a0;
+  background-color: var(--design);
+}
+
+.event__category--frontend {
+  background-color: var(--frontend);
+}
+
+.event__category--backend {
+  background-color: var(--backend);
+}
+
+.event__category--mobile {
+  background-color: var(--mobile);
+}
+
+.event__category--devops {
+  background-color: var(--devops);
+}
+
+.event__category--agile {
+  background-color: var(--agile);
+}
+
+.event__ticket--all {
+  background-color: var(--all);
 }
 
 .event__ticket--free {
-  background-color: #83cf71;
+  background-color: var(--free);
 }
 
 .event__ticket--payment {
-  background-color: #efae4c;
+  background-color: var(--payment);
 }

@@ -1,0 +1,29 @@
+.menuAdd {
+  display: none;
+}
+
+.menuAdd__button {
+  display: block;
+  font-weight: 300;
+  font-size: 18px;
+  color: var(--white);
+}
+
+.menuAdd__button--criarEvento {
+  font-size: 11px;
+  background-color: var(--menu);
+  width: 61px;
+  height: 40px;
+}
+
+.menuAdd__button--free {
+  background-color: var(--free);
+  width: 61px;
+  height: 61px;
+}
+
+.menuAdd__button--payment {
+  background-color: var(--payment);
+  width: 61px;
+  height: 61px;
+}
