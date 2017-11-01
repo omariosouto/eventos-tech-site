@@ -1,0 +1,19 @@
+.footerNewEvent {
+  margin-top: 60px;
+}
+
+.footerNewEvent__button {
+  position: relative;
+  font-size: 22px;
+  color: var(--white);
+  text-transform: uppercase;
+  width: 360px;
+  height: 50px;
+  background-color: var(--menu);
+}
+
+.footerNewEvent__button__img {
+  position: absolute;
+  top: 11px;
+  right: 10.5px;
+}

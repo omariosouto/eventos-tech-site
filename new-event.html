@@ -16,43 +16,73 @@
     <link rel="stylesheet" href="css/block/date.css">
     <link rel="stylesheet" href="css/block/menuFilter.css">
     <link rel="stylesheet" href="css/block/menuAdd.css">
-    <link rel="stylesheet" href="css/block/new-event.css">
+    <link rel="stylesheet" href="css/block/headerNewEvent.css">
+    <link rel="stylesheet" href="css/block/formNewEvent.css">
+    <link rel="stylesheet" href="css/block/footerNewEvent.css">
   </head>
   <body>
-    <header class="newEvent">
-      <img class="newEvent__imagem" src="img/icon-previous-dark.svg" alt="Voltar para menu">
-      <label class="newEvent__label">Cadastro de Evento</label>
+    <header class="headerNewEvent">
+      <img class="headerNewEvent__imagem" src="img/icon-previous-dark.svg" alt="Voltar para menu">
+      <label class="headerNewEvent__label">Cadastro de Evento</label>
     </header>
 
     <form class="formNewEvent" action="index.html" method="post">
 
-      <section class="wrap__inscricoes">
-        <fieldset class="inscricoes">
-          <legend class="inscricoes__title">Inscrições</legend>
+      <fieldset class="formNewEvent__inscricoes">
+        <legend class="formNewEvent__inscricoes__title">Inscrições</legend>
 
-          <input type="radio" name="titleIncricao" value="free" id="free" class="inscricoes__radio inscricoes__radio--free">
-          <label for="free" class="inscricoes__label inscricoes__label--free">
-            Free
-          </label>
+        <input type="radio" name="titleIncricao" value="free" id="free" class="formNewEvent__inscricoes__radio formNewEvent__inscricoes__radio--free">
+        <label for="free" class="formNewEvent__inscricoes__label formNewEvent__inscricoes__label--free">
+          Free
+        </label>
 
-          <input type="radio" name="titleIncricao" value="payment" id="payment" class="inscricoes__radio inscricoes__radio--payment">
-          <label for="payment" class="inscricoes__label inscricoes__label--payment">
-            Pago
-          </label>
-        </fieldset>
-      </section>
+        <input type="radio" name="titleIncricao" value="payment" id="payment" class="formNewEvent__inscricoes__radio formNewEvent__inscricoes__radio--payment">
+        <label for="payment" class="formNewEvent__inscricoes__label formNewEvent__inscricoes__label--payment">
+          Pago
+        </label>
+      </fieldset>
 
+      <div class="formNewEvent__informacoes">
+        <input id="name" type="text" class="formNewEvent__informacoes__input" pattern=".+" required>
+        <label for="name" class="formNewEvent__informacoes__label">Nome</label>
+        <span class="formNewEvent__informacoes__obrigatorio">Obrigatório</span>
+      </div>
 
+      <div class="formNewEvent__informacoes">
+        <input id="city" type="text" class="formNewEvent__informacoes__input" pattern=".+" required>
+        <label for="city" class="formNewEvent__informacoes__label">Cidade</label>
+        <span class="formNewEvent__informacoes__obrigatorio">Obrigatório</span>
+      </div>
 
+      <div class="formNewEvent__informacoes">
+        <input id="state" type="text" class="formNewEvent__informacoes__input" pattern=".+" required>
+        <label for="state" class="formNewEvent__informacoes__label">Estado</label>
+        <span class="formNewEvent__informacoes__obrigatorio">Obrigatório</span>
+      </div>
 
+      <div class="formNewEvent__informacoes">
+        <input id="address" type="text" class="formNewEvent__informacoes__input" pattern=".+" required>
+        <label for="address" class="formNewEvent__informacoes__label">Endereço</label>
+        <span class="formNewEvent__informacoes__obrigatorio">Obrigatório</span>
+      </div>
 
+      <div class="formNewEvent__informacoes">
+        <input id="site" type="text" class="formNewEvent__informacoes__input" pattern=".+">
+        <label for="site" class="formNewEvent__informacoes__label">Site</label>
+      </div>
 
-
+      <div class="formNewEvent__informacoes">
+        <input id="description" type="text" class="formNewEvent__informacoes__input" pattern=".+">
+        <label for="description" class="formNewEvent__informacoes__label">Descrição</label>
+        <span class="formNewEvent__informacoes__caracter">140</span>
+      </div>
     </form>
 
     <footer class="footerNewEvent">
-      <button class="footerNewEvent__button">Próximo</button>
-      <img class="footerNewEvent__img" src="img/icon-next-white.svg" alt="Ir para próximo menu">
+      <button class="footerNewEvent__button">
+        Próximo
+        <img class="footerNewEvent__button__img" src="img/icon-next-white.svg" alt="Ir para próximo menu">
+      </button>
     </footer>
   </body>
 </html>

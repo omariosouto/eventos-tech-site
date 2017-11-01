@@ -1,0 +1,22 @@
+.headerNewEvent {
+  display: block;
+  width: 360px;
+  height: 61px;
+  box-sizing: border-box;
+  border-bottom: solid 1px var(--border);
+  position: relative;
+  line-height: 61px;
+}
+
+.headerNewEvent__imagem {
+  position: absolute;
+  top: 16px;
+  left: 10px;
+}
+
+.headerNewEvent__label {
+  font-size: 22px;
+  color: var(--dark);
+  display: block;
+  text-align: center;
+}
