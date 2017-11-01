@@ -16,6 +16,10 @@
   padding-left: 20px;
 }
 
+.menuFilter--newEvent {
+  margin-top: 30px;
+}
+
 .menuFilter__title {
   font-size: 30px;
   padding-top: 25px;
