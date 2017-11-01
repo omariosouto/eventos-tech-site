@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Novo Evento</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/block/header.css">
+    <link rel="stylesheet" href="css/block/event.css">
+    <link rel="stylesheet" href="css/block/menu.css">
+    <link rel="stylesheet" href="css/block/date.css">
+    <link rel="stylesheet" href="css/block/menuFilter.css">
+    <link rel="stylesheet" href="css/block/menuAdd.css">
+    <link rel="stylesheet" href="css/block/headerNewEvent.css">
+    <link rel="stylesheet" href="css/block/formNewEvent.css">
+    <link rel="stylesheet" href="css/block/footerNewEvent.css">
+  </head>
+  <body>
+    <header class="headerNewEvent">
+      <img class="headerNewEvent__imagem" src="img/icon-previous-dark.svg" alt="Voltar para menu">
+      <label class="headerNewEvent__label">Dias e Horários do Evento</label>
+    </header>
+
+    <form class="formNewEvent" action="index.html" method="post">
+
+      <div class="formNewEvent__informacoes">
+        <input id="day" type="text" class="formNewEvent__informacoes__input" pattern=".+" required>
+        <label for="day" class="formNewEvent__informacoes__label">Dia</label>
+        <span class="formNewEvent__informacoes__obrigatorio">Obrigatório</span>
+      </div>
+
+      <div class="formNewEvent__informacoes">
+        <input id="inicialTime" type="text" class="formNewEvent__informacoes__input" pattern=".+" required>
+        <label for="inicialTime" class="formNewEvent__informacoes__label">Horário Inicial</label>
+        <span class="formNewEvent__informacoes__obrigatorio">Obrigatório</span>
+      </div>
+
+      <div class="formNewEvent__informacoes">
+        <input id="finalTime" type="text" class="formNewEvent__informacoes__input" pattern=".+" required>
+        <label for="finalTime" class="formNewEvent__informacoes__label">Horário Final</label>
+        <span class="formNewEvent__informacoes__obrigatorio">Obrigatório</span>
+      </div>
+    </form>
+
+    <section>
+      
+
+    </section>
+
+    <footer class="footerNewEvent">
+      <button class="footerNewEvent__button">
+        Finalizar
+      </button>
+    </footer>
+  </body>
+</html>

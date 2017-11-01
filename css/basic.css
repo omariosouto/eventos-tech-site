@@ -23,6 +23,9 @@
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--medium);
+}
+
+.headerAndMenu {
   padding-top: 60px; /* Este padding exite por causa do header fixed */
   padding-bottom: 60px;
 }
