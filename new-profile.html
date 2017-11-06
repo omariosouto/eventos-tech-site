@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Novo Evento</title>
+    <title>Novo Profile</title>
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
 
@@ -23,39 +23,36 @@
     <link rel="stylesheet" href="css/block/new-profile/headerNewProfile.css">
   </head>
   <body>
-    <header class="headerNewEvent">
-      <img class="headerNewEvent__imagem" src="img/block/new-event/icon-previous-dark.svg" alt="Voltar para menu">
-      <label class="headerNewEvent__label">Dias e Horários do Evento</label>
+    <header class="headerNewProfile">
+      <button class="headerNewProfile__buttonPrevious">Voltar</button>
+      <img class="headerNewProfile__foto" src="" alt="Imagem do Profile">
+      <button class="headerNewProfile__buttonEdit">Editar</button>
     </header>
 
     <form class="formNewEvent" action="index.html" method="post">
-
       <div class="formNewEvent__informacoes">
-        <input id="day" type="text" class="formNewEvent__informacoes__input" pattern=".+" required>
-        <label for="day" class="formNewEvent__informacoes__label">Dia</label>
+        <input id="nameProfile" type="text" class="formNewEvent__informacoes__input" pattern=".+" required>
+        <label for="nameProfile" class="formNewEvent__informacoes__label">Nome</label>
         <span class="formNewEvent__informacoes__obrigatorio">Obrigatório</span>
       </div>
 
       <div class="formNewEvent__informacoes">
-        <input id="inicialTime" type="text" class="formNewEvent__informacoes__input" pattern=".+" required>
-        <label for="inicialTime" class="formNewEvent__informacoes__label">Horário Inicial</label>
+        <input id="emailProfile" type="text" class="formNewEvent__informacoes__input" pattern=".+" required>
+        <label for="emailProfile" class="formNewEvent__informacoes__label">Email</label>
         <span class="formNewEvent__informacoes__obrigatorio">Obrigatório</span>
       </div>
 
       <div class="formNewEvent__informacoes">
-        <input id="finalTime" type="text" class="formNewEvent__informacoes__input" pattern=".+" required>
-        <label for="finalTime" class="formNewEvent__informacoes__label">Horário Final</label>
+        <input id="senhaProfile" type="text" class="formNewEvent__informacoes__input" pattern=".+" required>
+        <label for="senhaProfile" class="formNewEvent__informacoes__label">Senha</label>
         <span class="formNewEvent__informacoes__obrigatorio">Obrigatório</span>
+        <button class="formNewEvent__informacoes__senha">Ocultar Senha</button>
       </div>
     </form>
 
-    <div class="addNewEvent">
-      <button class="addNewEvent__button">+</button>
-    </div>
-
     <footer class="footerNewEvent">
       <button class="footerNewEvent__button">
-        Finalizar
+        Atualizar
       </button>
     </footer>
   </body>
