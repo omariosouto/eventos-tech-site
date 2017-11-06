@@ -9,7 +9,6 @@
 }
 
 .date__item {
-  font-size: 12px;
   font-weight: 300;
   background-color: var(--white);
   width: 60px;
@@ -22,7 +21,7 @@
 
 .date__item__number {
   display: block;
-  font-size: 25px;
+  font-size: 2.08em;
   font-weight: bold;
 }
 

@@ -5,12 +5,12 @@
 .menuAdd__button {
   display: block;
   font-weight: 300;
-  font-size: 18px;
+  font-size: 1.5em;
   color: var(--white);
 }
 
 .menuAdd__button--criarEvento {
-  font-size: 11px;
+  font-size: 0.916em;
   background-color: var(--menu);
   width: 61px;
   height: 40px;
