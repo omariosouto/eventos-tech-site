@@ -2,6 +2,7 @@
   border-bottom: 1px solid var(--border);
   position: relative;
   margin-top: 55px;
+  width: 360px;
 }
 
 .addNewEvent__button {

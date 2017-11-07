@@ -8,10 +8,17 @@
   line-height: 61px;
 }
 
-.headerNewEvent__imagem {
+.headerNewEvent__buttonPrevious {
+  background-image: url(../../../img/block/new-event/icon-previous-dark.svg);
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-position: center;
+  text-indent: -9999px;
+  width: 35px;
+  height: 53px;
   position: absolute;
-  top: 16px;
-  left: 10px;
+  top: 4px;
+  left: 4px;
 }
 
 .headerNewEvent__label {
