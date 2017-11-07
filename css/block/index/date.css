@@ -17,6 +17,7 @@
   box-sizing: border-box;
   text-align: center;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .date__item__number {

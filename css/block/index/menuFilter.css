@@ -41,6 +41,7 @@
   display: block;
   position: relative;
   line-height: 28px;
+  cursor: pointer;
 }
 
 .menuFilter__label::before,

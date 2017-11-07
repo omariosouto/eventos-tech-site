@@ -34,6 +34,7 @@
 
 .event__menu__item {
   margin-right: 25px;
+  cursor: pointer;
 }
 
 .event__category {

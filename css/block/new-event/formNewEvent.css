@@ -1,5 +1,6 @@
 .formNewEvent {
   padding-left: 20px;
+  padding-right: 20px;
 }
 
 .formNewEvent__inscricoes__title {
@@ -19,6 +20,7 @@
   line-height: 28px;
   padding-left: 40px;
   padding-right: 30px;
+  cursor: pointer;
 }
 
 .formNewEvent__inscricoes__label::before,
@@ -71,10 +73,9 @@
 .formNewEvent__inscricoes__radio--payment:checked + .formNewEvent__inscricoes__label--payment::after {
   background-color: var(--payment);
 }
-
+/*-------------------------------------------------------------*/
 .formNewEvent__informacoes {
   position: relative;
-  width: 320px;
   height: 25px;
   margin-top: 35px;
 }
@@ -99,8 +100,8 @@
   left: 0;
   color: var(--light);
   cursor: text;
-  box-sizing: border-box;
   transition: .2s ease-in-out;
+  box-sizing: border-box;
 }
 
 .formNewEvent__informacoes__input:valid,
