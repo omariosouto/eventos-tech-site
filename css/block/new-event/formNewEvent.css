@@ -84,6 +84,7 @@
 .formNewEvent__informacoes__label {
   font-size: 1.833em;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .formNewEvent__informacoes__input {
@@ -91,7 +92,6 @@
   color: var(--dark);
   outline: none;
   transition: .2s ease-in-out;
-  box-sizing: border-box;
 }
 
 .formNewEvent__informacoes__label {
@@ -101,16 +101,26 @@
   color: var(--light);
   cursor: text;
   transition: .2s ease-in-out;
-  box-sizing: border-box;
 }
 
-.formNewEvent__informacoes__input:valid,
+/*.formNewEvent__informacoes__input:valid,
 .formNewEvent__informacoes__input:focus {
   border-bottom: solid 2px var(--dark);
 }
 
 .formNewEvent__informacoes__input:valid + .formNewEvent__informacoes__label,
 .formNewEvent__informacoes__input:focus + .formNewEvent__informacoes__label {
+  font-size: 1em;
+  color: var(--medium);
+  top: -15px;
+  pointer-events: none;
+}*/
+
+.formNewEvent__informacoes__input--focus {
+  border-bottom: solid 2px var(--dark);
+}
+
+.formNewEvent__informacoes__label--focus {
   font-size: 1em;
   color: var(--medium);
   top: -15px;
