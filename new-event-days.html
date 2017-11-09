@@ -32,19 +32,19 @@
     <form class="formNewEvent" action="index.html" method="post">
 
       <div class="formNewEvent__informacoes">
-        <input id="day" type="text" class="formNewEvent__informacoes__input" pattern=".+" required>
+        <input id="day" type="text" class="formNewEvent__informacoes__input" required data-number>
         <label for="day" class="formNewEvent__informacoes__label">Dia</label>
         <span class="formNewEvent__informacoes__obrigatorio">Obrigatório</span>
       </div>
 
       <div class="formNewEvent__informacoes">
-        <input id="inicialTime" type="text" class="formNewEvent__informacoes__input" pattern=".+" required>
+        <input id="inicialTime" type="text" class="formNewEvent__informacoes__input" required data-number>
         <label for="inicialTime" class="formNewEvent__informacoes__label">Horário Inicial</label>
         <span class="formNewEvent__informacoes__obrigatorio">Obrigatório</span>
       </div>
 
       <div class="formNewEvent__informacoes">
-        <input id="finalTime" type="text" class="formNewEvent__informacoes__input" pattern=".+" required>
+        <input id="finalTime" type="text" class="formNewEvent__informacoes__input" required data-number>
         <label for="finalTime" class="formNewEvent__informacoes__label">Horário Final</label>
         <span class="formNewEvent__informacoes__obrigatorio">Obrigatório</span>
       </div>
@@ -61,6 +61,7 @@
     </footer>
 
     <script type="text/javascript" src="js/modificaForm.js"></script>
+    <script type="text/javascript" src="js/validacao.js"></script>
 
   </body>
 </html>

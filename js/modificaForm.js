@@ -28,6 +28,4 @@
     }
   }
 
-  window.comFoco = comFoco
-  window.semFoco = semFoco
 }) ()

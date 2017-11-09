@@ -118,6 +118,7 @@
 
 .formNewEvent__informacoes__input--focus {
   border-bottom: solid 2px var(--dark);
+  transition: .2s ease-in-out;
 }
 
 .formNewEvent__informacoes__label--focus {
@@ -125,6 +126,7 @@
   color: var(--medium);
   top: -15px;
   pointer-events: none;
+  transition: .2s ease-in-out;
 }
 
 .formNewEvent__informacoes__obrigatorio {
