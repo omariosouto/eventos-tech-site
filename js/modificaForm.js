@@ -18,7 +18,7 @@
   }
 
 
-  function semFoco() {
+  function semFoco(event) {
     var input = event.target
     var label = input.parentNode.querySelector(".formNewEvent__informacoes__label")
 

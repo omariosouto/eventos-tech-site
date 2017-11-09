@@ -61,11 +61,11 @@
 }
 
 .menu__item--meusEventos {
-  background-image: url(../../../img/block/menu/menu-calendar.svg);
+  background-image: url(../../../img/block/menu/menu-myCalendar.svg);
 }
 
 .menu__item--isActive.menu__item--meusEventos {
-  background-image: url(../../../img/block/menu/menu-calendar--isActive.svg);
+  background-image: url(../../../img/block/menu/menu-myCalendar--isActive.svg);
 }
 
 .menu__item--perfil {
