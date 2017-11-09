@@ -1,0 +1,19 @@
+{
+  "name": "eventos-tech-site",
+  "version": "1.0.0",
+  "description": "Site do eventos.tech",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CollabCodeBR/eventos-tech-site.git"
+  },
+  "author": "CollabCodeBR",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/CollabCodeBR/eventos-tech-site/issues"
+  },
+  "homepage": "https://github.com/CollabCodeBR/eventos-tech-site#readme"
+}
