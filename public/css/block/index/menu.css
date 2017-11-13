@@ -15,16 +15,21 @@
 }
 
 .menu__item {
-  background-repeat: no-repeat;
-  padding-top: 33px;
-  background-position: center 8px;
+  display: inline-block;
   width: 65px;
   text-align: center;
-  display: inline-block;
-  position: relative;
-  font-weight: 300;
   vertical-align: top;
   cursor: pointer;
+}
+
+.menu__item a {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center 8px;
+  padding-top: 33px;
+  font-weight: 300;
+  text-decoration: none;
+  color: inherit;
 }
 
 .menu__item--add {
@@ -44,35 +49,35 @@
   overflow: hidden;
 }
 
-.menu__item--evento {
+.menu__item--evento a {
   background-image: url(../../../img/block/menu/menu-calendar.svg);
 }
 
-.menu__item--isActive.menu__item--evento {
+.menu__item--isActive.menu__item--evento a {
   background-image: url(../../../img/block/menu/menu-calendar--isActive.svg);
 }
 
-.menu__item--like {
+.menu__item--like a {
   background-image: url(../../../img/block/menu/menu-like.svg);
 }
 
-.menu__item--isActive.menu__item--like {
+.menu__item--isActive.menu__item--like a {
   background-image: url(../../../img/block/menu/menu-like--isActive.svg);
 }
 
-.menu__item--meusEventos {
+.menu__item--meusEventos a {
   background-image: url(../../../img/block/menu/menu-myCalendar.svg);
 }
 
-.menu__item--isActive.menu__item--meusEventos {
+.menu__item--isActive.menu__item--meusEventos a {
   background-image: url(../../../img/block/menu/menu-myCalendar--isActive.svg);
 }
 
-.menu__item--perfil {
+.menu__item--perfil a {
   background-image: url(../../../img/block/menu/menu-profile.svg);
 }
 
-.menu__item--isActive.menu__item--perfil {
+.menu__item--isActive.menu__item--perfil a {
   background-image: url(../../../img/block/menu/menu-profile--isActive.svg);
 }
 

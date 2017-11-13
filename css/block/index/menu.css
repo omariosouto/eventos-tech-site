@@ -14,7 +14,8 @@
   padding: 0 10px 0 70px;
 }
 
-.menu__item {
+.menu__item a {
+  display: block;
   background-repeat: no-repeat;
   padding-top: 33px;
   background-position: center 8px;
@@ -25,6 +26,7 @@
   font-weight: 300;
   vertical-align: top;
   cursor: pointer;
+  color: inherit;
 }
 
 .menu__item--add {
