@@ -1,0 +1,82 @@
+.wrap__menu {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.menu {
+  background-color: var(--menu);
+  box-sizing: border-box;
+  height: 50px;
+  color: var(--white);
+  text-align: justify;
+  padding: 0 10px 0 70px;
+}
+
+.menu__item {
+  background-repeat: no-repeat;
+  padding-top: 33px;
+  background-position: center 8px;
+  width: 65px;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  font-weight: 300;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+.menu__item--add {
+  background-color: var(--add);
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.36);
+  font-size: 2.5em;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 61px;
+  height: 61px;
+  padding-top: 0;
+  line-height: 61px;
+}
+
+.menu__item--isActive {
+  overflow: hidden;
+}
+
+.menu__item--evento {
+  background-image: url(../../../img/block/menu/menu-calendar.svg);
+}
+
+.menu__item--isActive.menu__item--evento {
+  background-image: url(../../../img/block/menu/menu-calendar--isActive.svg);
+}
+
+.menu__item--like {
+  background-image: url(../../../img/block/menu/menu-like.svg);
+}
+
+.menu__item--isActive.menu__item--like {
+  background-image: url(../../../img/block/menu/menu-like--isActive.svg);
+}
+
+.menu__item--meusEventos {
+  background-image: url(../../../img/block/menu/menu-myCalendar.svg);
+}
+
+.menu__item--isActive.menu__item--meusEventos {
+  background-image: url(../../../img/block/menu/menu-myCalendar--isActive.svg);
+}
+
+.menu__item--perfil {
+  background-image: url(../../../img/block/menu/menu-profile.svg);
+}
+
+.menu__item--isActive.menu__item--perfil {
+  background-image: url(../../../img/block/menu/menu-profile--isActive.svg);
+}
+
+.linhaFinal {
+  display: inline-block;
+  width: 100%;
+}

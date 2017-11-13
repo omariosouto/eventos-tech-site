@@ -1,0 +1,34 @@
+.wrap__date {
+  position: fixed;
+  left: 0;
+  top: 0;
+  border-right: 1px solid var(--border);
+  overflow: auto;
+  height: 100vh;
+  padding-top: 60px;
+}
+
+.date__item {
+  font-weight: 300;
+  background-color: var(--white);
+  width: 60px;
+  height: 60px;
+  padding: 5px 0;
+  box-sizing: border-box;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.date__item__number {
+  display: block;
+  font-size: 2.08em;
+  font-weight: bold;
+}
+
+.date__item--isActive {
+  position: fixed;
+  top: 0;
+  background-color: var(--menu);
+  color: var(--white);
+}

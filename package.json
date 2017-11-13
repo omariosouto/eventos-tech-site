@@ -2,9 +2,12 @@
   "name": "eventos-tech-site",
   "version": "1.0.0",
   "description": "Site do eventos.tech",
-  "main": "server.js",
+  "main": "./src/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon"
+  },
+  "config": {
+    "port": 3000
   },
   "repository": {
     "type": "git",
@@ -14,5 +17,12 @@
   "bugs": {
     "url": "https://github.com/CollabCodeBR/eventos-tech-site/issues"
   },
-  "homepage": "https://github.com/CollabCodeBR/eventos-tech-site#readme"
+  "homepage": "https://github.com/CollabCodeBR/eventos-tech-site#readme",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.16.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  }
 }

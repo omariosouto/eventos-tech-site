@@ -1,0 +1,211 @@
+.wrap__menuFilter {
+  display: none;
+}
+
+.wrap__menuFilter--isActive {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: var(--white);
+  width: 300px;
+  box-sizing: border-box;
+}
+
+.menuFilter {
+  padding-left: 20px;
+}
+
+.menuFilter--newEvent {
+  margin-top: 30px;
+}
+
+.menuFilter__title {
+  font-size: 2.5em;
+  padding-top: 25px;
+  margin-bottom: 10px;
+}
+
+.menuFilter__checbox {
+  display: none;
+}
+
+.menuFilter__checbox:checked + .menuFilter__label::after {
+  background-color: var(--medium);
+}
+
+.menuFilter__label {
+  font-size: 1.833em;
+  font-weight: 300;
+  margin-bottom: 15px;
+  display: block;
+  position: relative;
+  line-height: 28px;
+  cursor: pointer;
+}
+
+.menuFilter__label::before,
+.menuFilter__label::after {
+  content: "";
+  display: inline-block;
+  box-sizing: border-box;
+  border: solid 1px var(--medium);
+}
+
+.menuFilter__label::before {
+  width: 26px;
+  height: 26px;
+  margin-right: 15px;
+  float: left;
+}
+
+.menuFilter__label::after {
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+}
+
+.menuFilter__label--all,
+.menuFilter__label--allInscricao {
+  color: var(--all);
+}
+
+.menuFilter__label--all::before,
+.menuFilter__label--all::after,
+.menuFilter__label--allInscricao::before,
+.menuFilter__label--allInscricao::after {
+  border-color: var(--all);
+}
+
+.menuFilter__checbox--all:checked + .menuFilter__label--all::after,
+.menuFilter__checbox--allInscricao:checked + .menuFilter__label--allInscricao::after {
+  background-color: var(--all);
+}
+
+.menuFilter__label--ux {
+  color: var(--ux);
+}
+
+.menuFilter__label--ux::before,
+.menuFilter__label--ux::after {
+  border-color: var(--ux);
+}
+
+.menuFilter__checbox--ux:checked + .menuFilter__label--ux::after {
+  background-color: var(--ux);
+}
+
+.menuFilter__label--design {
+  color: var(--design);
+}
+
+.menuFilter__label--design::before,
+.menuFilter__label--design::after {
+  border-color: var(--design);
+}
+
+.menuFilter__checbox--design:checked + .menuFilter__label--design::after {
+  background-color: var(--design);
+}
+
+.menuFilter__label--frontend {
+  color: var(--frontend);
+}
+
+.menuFilter__label--frontend::before,
+.menuFilter__label--frontend::after {
+  border-color: var(--frontend);
+}
+
+.menuFilter__checbox--frontend:checked + .menuFilter__label--frontend::after {
+  background-color: var(--frontend);
+}
+
+.menuFilter__label--backend {
+  color: var(--backend);
+}
+
+.menuFilter__label--backend::before,
+.menuFilter__label--backend::after {
+  border-color: var(--backend);
+}
+
+.menuFilter__checbox--backend:checked + .menuFilter__label--backend::after {
+  background-color: var(--backend);
+}
+
+.menuFilter__label--mobile {
+  color: var(--mobile);
+}
+
+.menuFilter__label--mobile::before,
+.menuFilter__label--mobile::after {
+  border-color: var(--mobile);
+}
+
+.menuFilter__checbox--mobile:checked + .menuFilter__label--mobile::after {
+  background-color: var(--mobile);
+}
+
+.menuFilter__label--devops {
+  color: var(--devops);
+}
+
+.menuFilter__label--devops::before,
+.menuFilter__label--devops::after {
+  border-color: var(--devops);
+}
+
+.menuFilter__checbox--devops:checked + .menuFilter__label--devops::after {
+  background-color: var(--devops);
+}
+
+.menuFilter__label--agile {
+  color: var(--agile);
+}
+
+.menuFilter__label--agile::before,
+.menuFilter__label--agile::after {
+  border-color: var(--agile);
+}
+
+.menuFilter__checbox--agile:checked + .menuFilter__label--agile::after {
+  background-color: var(--agile);
+}
+
+.menuFilter__label--free {
+  color: var(--free);
+}
+
+.menuFilter__label--free::before,
+.menuFilter__label--free::after {
+  border-color: var(--free);
+}
+
+.menuFilter__checbox--free:checked + .menuFilter__label--free::after {
+  background-color: var(--free);
+}
+
+.menuFilter__label--payment {
+  color: var(--payment);
+}
+
+.menuFilter__label--payment::before,
+.menuFilter__label--payment::after {
+  border-color: var(--payment);
+}
+
+.menuFilter__checbox--payment:checked + .menuFilter__label--payment::after {
+  background-color: var(--payment);
+}
+
+.menuFilter__button {
+  font-size: 1.833em;
+  color: var(--white);
+  text-transform: uppercase;
+  background-color: var(--menu);
+  width: 300px;
+  height: 50px;
+}
