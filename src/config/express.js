@@ -1,9 +1,13 @@
 const express = require('express')
 const app = express()
+const nunjucks = require('nunjucks')
 
 const indexRouter = require('../routers/home')
 
-app.set('view engine', 'ejs')
+nunjucks.configure('views', {
+  autoescape: true,
+  express: app
+})
 
 app.use(express.static('public'))
 
