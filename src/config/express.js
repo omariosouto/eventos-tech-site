@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 const nunjucks = require('nunjucks')
 
-const indexRouter = require('../routers/home')
+const homeRouter = require('../routers/home')
 
 nunjucks.configure('views', {
   autoescape: true,
@@ -11,6 +11,6 @@ nunjucks.configure('views', {
 
 app.use(express.static('public'))
 
-app.use('/', indexRouter)
+app.use('/', homeRouter)
 
 module.exports = app
