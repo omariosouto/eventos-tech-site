@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
-  <g fill="none" fill-rule="evenodd" transform="translate(1)">
-    <polygon fill="#FFF" fill-rule="nonzero" stroke="#FFF" points="0 7.867 20 7.867 20 21.2 0 21.2"/>
-    <polygon stroke="#FFF" points="20 2.667 15 2.667 14.167 2.667 5.833 2.667 5 2.667 0 2.667 0 7.667 20 7.667"/>
-    <polygon fill="#FFF" fill-rule="nonzero" points="5 0 6 0 6 5 5 5"/>
-    <polygon fill="#FFF" fill-rule="nonzero" points="14 0 15 0 15 5 14 5"/>
-  </g>
-</svg>

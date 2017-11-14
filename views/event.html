@@ -1,0 +1,73 @@
+{% extends "templates/base.html" %}
+{% block content %}
+  <body>
+    <header class="headerNewEvent">
+      <a href="/" class="headerNewEvent__buttonPrevious">
+        Voltar
+      </a>
+      <label class="headerNewEvent__label">Cadastro de Evento</label>
+    </header>
+
+    <form class="formNewEvent" action="index.html" method="post">
+
+      <fieldset class="formNewEvent__inscricoes">
+        <legend class="formNewEvent__inscricoes__title">Inscrições</legend>
+
+        <input type="radio" name="titleIncricao" value="free" id="free" class="formNewEvent__inscricoes__radio formNewEvent__inscricoes__radio--free" checked>
+        <label for="free" class="formNewEvent__inscricoes__label formNewEvent__inscricoes__label--free">
+          Free
+        </label>
+
+        <input type="radio" name="titleIncricao" value="payment" id="payment" class="formNewEvent__inscricoes__radio formNewEvent__inscricoes__radio--payment">
+        <label for="payment" class="formNewEvent__inscricoes__label formNewEvent__inscricoes__label--payment">
+          Pago
+        </label>
+      </fieldset>
+
+      <div class="formNewEvent__informacoes">
+        <input id="name" type="text" class="formNewEvent__informacoes__input" required>
+        <label for="name" class="formNewEvent__informacoes__label">Nome</label>
+        <span class="formNewEvent__informacoes__obrigatorio">Obrigatório</span>
+      </div>
+
+      <div class="formNewEvent__informacoes">
+        <input id="city" type="text" class="formNewEvent__informacoes__input" required>
+        <label for="city" class="formNewEvent__informacoes__label">Cidade</label>
+        <span class="formNewEvent__informacoes__obrigatorio">Obrigatório</span>
+      </div>
+
+      <div class="formNewEvent__informacoes">
+        <input id="state" type="text" class="formNewEvent__informacoes__input" required>
+        <label for="state" class="formNewEvent__informacoes__label">Estado</label>
+        <span class="formNewEvent__informacoes__obrigatorio">Obrigatório</span>
+      </div>
+
+      <div class="formNewEvent__informacoes">
+        <input id="address" type="text" class="formNewEvent__informacoes__input" required>
+        <label for="address" class="formNewEvent__informacoes__label">Endereço</label>
+        <span class="formNewEvent__informacoes__obrigatorio">Obrigatório</span>
+      </div>
+
+      <div class="formNewEvent__informacoes">
+        <input id="site" type="text" class="formNewEvent__informacoes__input">
+        <label for="site" class="formNewEvent__informacoes__label">Site</label>
+      </div>
+
+      <div class="formNewEvent__informacoes">
+        <input id="description" type="text" class="formNewEvent__informacoes__input">
+        <label for="description" class="formNewEvent__informacoes__label">Descrição</label>
+        <span class="formNewEvent__informacoes__caracter">140</span>
+      </div>
+    </form>
+
+    <footer class="footerNewEvent">
+      <button class="footerNewEvent__button">
+        Próximo
+        <img class="footerNewEvent__button__img" src="img/block/new-event/icon-next-white.svg" alt="Ir para próximo menu">
+      </button>
+    </footer>
+
+    <script type="text/javascript" src="js/modificaForm.js"></script>
+    <script type="text/javascript" src="js/validacao.js"></script>
+  </body>
+{% endblock %}

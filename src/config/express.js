@@ -4,6 +4,7 @@ const nunjucks = require('nunjucks')
 
 const homeRouter = require('../routers/home')
 const perfilRouter = require('../routers/perfil')
+const eventRouter = require('../routers/event')
 
 nunjucks.configure('views', {
   autoescape: true,
@@ -14,5 +15,6 @@ app.use(express.static('public'))
 
 app.use('/', homeRouter)
 app.use('/perfil', perfilRouter)
+app.use('/event', eventRouter)
 
 module.exports = app
