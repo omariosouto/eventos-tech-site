@@ -1,3 +1,4 @@
+{% macro menu(page="events") %}
 <nav class="wrap__menu">
   <ul class="menu">
     <li class="menu__item menu__item--add">
@@ -5,22 +6,22 @@
         +
       </a>
     </li>
-    <li class="menu__item menu__item--evento menu__item--isActive">
+    <li class="menu__item menu__item--evento {% if page == "events" %} menu__item--isActive {% endif %}">
       <a href="/events">
         Eventos
       </a>
     </li>
-    <li class="menu__item menu__item--like">
+    <li class="menu__item menu__item--like {% if page == "like" %} menu__item--isActive {% endif %}">
       <a href="/events/like">
         Like
       </a>
     </li>
-    <li class="menu__item menu__item--meusEventos">
+    <li class="menu__item menu__item--meusEventos {% if page == "my" %} menu__item--isActive {% endif %}">
       <a href="/events/my">
         Meus
       </a>
     </li>
-    <li class="menu__item menu__item--perfil">
+    <li class="menu__item menu__item--perfil {% if page == "perfil" %} menu__item--isActive {% endif %}">
       <a href="/perfil">
         Perfil
       </a>
@@ -28,3 +29,4 @@
     <li class="linhaFinal"></li>
   </ul>
 </nav>
+{% endmacro %}
