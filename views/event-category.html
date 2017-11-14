@@ -1,0 +1,63 @@
+{% extends "templates/base.html" %}
+{% block content %}
+  <body>
+    <header class="headerNewEvent">
+      <a href="/event" class="headerNewEvent__buttonPrevious">Voltar</a>
+      <label class="headerNewEvent__label">Categorias</label>
+    </header>
+
+    <fieldset class="menuFilter menuFilter--newEvent">
+
+      <input type="checkbox" name="all" id="all" class="menuFilter__checbox menuFilter__checbox--all">
+      <label for="all" class="menuFilter__label menuFilter__label--all">
+        Todas
+      </label>
+
+      <input type="checkbox" name="ux" id="ux" class="menuFilter__checbox menuFilter__checbox--ux">
+      <label for="ux" class="menuFilter__label menuFilter__label--ux">
+        UX
+      </label>
+
+      <input type="checkbox" name="design" id="design" class="menuFilter__checbox menuFilter__checbox--design">
+      <label for="design" class="menuFilter__label menuFilter__label--design">
+        Design
+      </label>
+
+      <input type="checkbox" name="frontend" id="frontend" class="menuFilter__checbox menuFilter__checbox--frontend">
+      <label for="frontend" class="menuFilter__label menuFilter__label--frontend">
+        Frontend
+      </label>
+
+      <input type="checkbox" name="backend" id="backend" class="menuFilter__checbox menuFilter__checbox--backend">
+      <label for="backend" class="menuFilter__label menuFilter__label--backend">
+        Backend
+      </label>
+
+      <input type="checkbox" name="mobile" id="mobile" class="menuFilter__checbox menuFilter__checbox--mobile">
+      <label for="mobile" class="menuFilter__label menuFilter__label--mobile">
+        Mobile
+      </label>
+
+      <input type="checkbox" name="devops" id="devops" class="menuFilter__checbox menuFilter__checbox--devops">
+      <label for="devops" class="menuFilter__label menuFilter__label--devops">
+        DevOps
+      </label>
+
+      <input type="checkbox" name="agile" id="agile" class="menuFilter__checbox menuFilter__checbox--agile">
+      <label for="agile" class="menuFilter__label menuFilter__label--agile">
+        Agile
+      </label>
+    </fieldset>
+
+    <footer class="footerNewEvent">
+      <button class="footerNewEvent__button">
+        Próximo
+        <img class="footerNewEvent__button__img" src="/img/block/new-event/icon-next-white.svg" alt="Ir para próximo menu">
+      </button>
+    </footer>
+
+    <script type="text/javascript" src="/js/modificaForm.js"></script>
+    <script type="text/javascript" src="/js/validacao.js"></script>
+
+  </body>
+{% endblock %}
