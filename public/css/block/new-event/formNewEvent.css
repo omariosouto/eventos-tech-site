@@ -1,6 +1,5 @@
 .formNewEvent {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0 20px 90px;
 }
 
 .formNewEvent__inscricoes__title {
@@ -103,19 +102,6 @@
   transition: .2s ease-in-out;
 }
 
-/*.formNewEvent__informacoes__input:valid,
-.formNewEvent__informacoes__input:focus {
-  border-bottom: solid 2px var(--dark);
-}
-
-.formNewEvent__informacoes__input:valid + .formNewEvent__informacoes__label,
-.formNewEvent__informacoes__input:focus + .formNewEvent__informacoes__label {
-  font-size: 1em;
-  color: var(--medium);
-  top: -15px;
-  pointer-events: none;
-}*/
-
 .formNewEvent__informacoes__input--focus {
   border-bottom: solid 2px var(--dark);
   transition: .2s ease-in-out;
@@ -129,11 +115,17 @@
   transition: .2s ease-in-out;
 }
 
+.formNewEvent__informacoes__obrigatorio,
+.formNewEvent__informacoes__caracter {
+  display: block;
+  text-align: right;
+}
 .formNewEvent__informacoes__obrigatorio {
   color: var(--required);
-  position: absolute;
-  right: 2px;
-  bottom: -18px;
+}
+
+.formNewEvent__informacoes__caracter {
+  color: var(--dark);
 }
 
 .formNewEvent__informacoes__senha {
@@ -147,11 +139,4 @@
   position: absolute;
   right: 2px;
   bottom: -6px;
-}
-
-.formNewEvent__informacoes__caracter {
-  color: var(--dark);
-  position: absolute;
-  right: 2px;
-  bottom: -18px;
 }
