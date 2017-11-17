@@ -1,11 +1,12 @@
 .wrap__menuFilter {
   background-color: var(--white);
-  width: 300px;
+  width: calc(100vw - 30px);
   box-sizing: border-box;
+  transform: translateX(115%);
   position: absolute;
   top: 0;
-  right: 0;
-  transform: translateX(100%);
+  left: 0;
+  box-shadow: -3px 0px 10px 0px #555;
 }
 
 .wrap__menuFilter--isActive {
@@ -46,7 +47,7 @@
   cursor: pointer;
 }
 .menuFilter__label:last-child {
-  margin-bottom: 80px;
+  margin-bottom: 160px;
 }
 
 .menuFilter__label::before,

@@ -2,6 +2,14 @@
   margin-bottom: 90px;
   padding-left: 20px;
   padding-right: 20px;
+  height: 100vh;
+  overflow: scroll;
+}
+
+.formNewEvent--day {
+  margin-bottom: 0;
+  height: auto;
+  overflow: unset;
 }
 
 .formNewEvent__inscricoes__title {
@@ -17,8 +25,8 @@
 
 .formNewEvent__inscricoes__label {
   font-size: 1.833em;
+  height: 28px;
   position: relative;
-  line-height: 28px;
   padding-left: 40px;
   padding-right: 30px;
   cursor: pointer;
@@ -31,6 +39,7 @@
   box-sizing: border-box;
   border: solid 1px var(--medium);
   border-radius: 50%;
+  will-change: border;
 }
 
 .formNewEvent__inscricoes__label::before {
@@ -39,14 +48,16 @@
   margin-right: 10px;
   position: absolute;
   left: 0;
+  z-index: 2;
 }
 
 .formNewEvent__inscricoes__label::after {
-  width: 22px;
-  height: 22px;
+  width: 16px;
+  height: 16px;
   position: absolute;
-  left: 2px;
-  top: 1px;
+  left: 5px;
+  top: 5px;
+  z-index: -1;
 }
 
 .formNewEvent__inscricoes__label--free {
@@ -74,11 +85,19 @@
 .formNewEvent__inscricoes__radio--payment:checked + .formNewEvent__inscricoes__label--payment::after {
   background-color: var(--payment);
 }
-/*-------------------------------------------------------------*/
+
 .formNewEvent__informacoes {
   position: relative;
   height: 25px;
   margin-top: 35px;
+}
+
+.formNewEvent__informacoes:last-child {
+  margin-bottom: 200px;
+}
+
+.formNewEvent--day .formNewEvent__informacoes:last-child {
+  margin-bottom: 0;
 }
 
 .formNewEvent__informacoes__input,

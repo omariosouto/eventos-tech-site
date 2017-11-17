@@ -6,6 +6,9 @@
 }
 
 .addNewEvent__button {
+  text-decoration: none;
+  text-align: center;
+  line-height: 46px;
   font-size: 2.5em;
   color: var(--white);
   background-color: var(--add);

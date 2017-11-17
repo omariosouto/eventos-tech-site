@@ -6,6 +6,7 @@
   overflow: auto;
   height: 100vh;
   padding-top: 60px;
+  z-index: 1;
 }
 
 .date__item {

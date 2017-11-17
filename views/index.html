@@ -3,12 +3,7 @@
 
 {% block content %}
 <body class="headerAndMenu">
-  <header class="header">
-    
-    {% include "partials/month.html" %}
-
-    <img class="header__filter" src="/img/header-filter.svg" alt="Icone para entrar nos filtros">
-  </header>
+  {% include "partials/header.html" %}
 
   <section class="wrap__date">
     <ol class="date">
@@ -57,8 +52,8 @@
 
       <dd>
         <address class="event__address">
-          Teatro do Hotel Maksoud Plaza
-          <strong class="event__address__city">São Paulo - SP</strong>
+          Teatro do Hotel Maksoud Plaza Teatro do Hotel Maksoud Plaza
+          <strong class="event__address__city">São Paulo - SP São Paulo - SP</strong>
         </address>
       </dd>
 
@@ -332,7 +327,7 @@
     <button class="menuAdd__button menuAdd__button--payment">Pago</button>
   </div>
 
-  <section class="wrap__menuFilter wrap__menuFilter--isActive">
+  <section id="menuFilter" class="wrap__menuFilter">
     <div class="menuFilter">
       <legend class="menuFilter__title">Categorias</legend>
 
@@ -397,7 +392,8 @@
     <button class="menuFilter__button">Filtrar</button>
   </section>
 
-  <script type="text/javascript" src="/js/modificaForm.js"></script>
-  <script type="text/javascript" src="/js/validacao.js"></script>
+  <script src="/js/modificaForm.js"></script>
+  <script src="/js/validacao.js"></script>
+  <script src="/js/date.js"></script>
 </body>
 {% endblock %}

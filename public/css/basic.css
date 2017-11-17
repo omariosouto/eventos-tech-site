@@ -22,11 +22,16 @@
   --payment: #eead4f;
 }
 
+html, body {
+  overflow: hidden;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 12px;
   color: var(--medium);
-  min-width: 320px; 
+  min-width: 320px;
+  position: relative;
 }
 
 button {
