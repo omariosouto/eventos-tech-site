@@ -1,5 +1,7 @@
 .formNewEvent {
-  padding: 0 20px 90px;
+  margin-bottom: 90px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .formNewEvent__inscricoes__title {
