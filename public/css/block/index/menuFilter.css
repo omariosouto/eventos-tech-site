@@ -1,19 +1,21 @@
 .wrap__menuFilter {
-  display: none;
-}
-
-.wrap__menuFilter--isActive {
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
   background-color: var(--white);
   width: 300px;
   box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+}
+
+.wrap__menuFilter--isActive {
+  transform: translateX(0%);
 }
 
 .menuFilter {
+  height: 100vh;
   padding-left: 20px;
+  overflow: scroll;
 }
 
 .menuFilter--newEvent {
@@ -42,6 +44,9 @@
   position: relative;
   line-height: 28px;
   cursor: pointer;
+}
+.menuFilter__label:last-child {
+  margin-bottom: 80px;
 }
 
 .menuFilter__label::before,
@@ -208,4 +213,6 @@
   background-color: var(--menu);
   width: 300px;
   height: 50px;
+  position: fixed;
+  bottom: 0;
 }
