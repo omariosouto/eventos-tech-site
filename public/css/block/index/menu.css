@@ -16,7 +16,7 @@
 
 .menu__item {
   display: inline-block;
-  width: 65px;
+  min-width: 48px;
   text-align: center;
   vertical-align: top;
   cursor: pointer;

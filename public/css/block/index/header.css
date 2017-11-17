@@ -10,14 +10,10 @@
   background-color: rgba(255, 255, 255, .95);
 }
 
-.header__month {
-  display: inline-block;
-  padding-right: 20px;
-  position: relative;
-  cursor: pointer;
+.wrap__header__month {
+  position: absolute
 }
-
-.header__month::after {
+.wrap__header__month::after {
   content: "";
   display: inline-block;
   border-top: 5px solid var(--light);
@@ -30,12 +26,9 @@
   right: 0;
 }
 
-.header__month__item {
-  display: none;
-}
-
-.header__month__item--isActive {
-  display: inline-block;
+.header__month {
+  -webkit-appearance: none;
+  all: unset;
 }
 
 .header__filter {
