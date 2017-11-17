@@ -10,27 +10,6 @@
   background-color: rgba(255, 255, 255, .95);
 }
 
-.wrap__header__month {
-  position: absolute
-}
-.wrap__header__month::after {
-  content: "";
-  display: inline-block;
-  border-top: 5px solid var(--light);
-  border-bottom: 5px solid transparent;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  width: 0;
-  position: absolute;
-  top: 10px;
-  right: 0;
-}
-
-.header__month {
-  -webkit-appearance: none;
-  all: unset;
-}
-
 .header__filter {
   float: right;
 }

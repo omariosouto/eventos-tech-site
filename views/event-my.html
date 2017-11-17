@@ -4,22 +4,7 @@
 {% block content %}
 <body class="headerAndMenu">
   <header class="header">
-    <div class="wrap__header__month">
-      <select class="header__month" name="" id="">
-        <option class="header__month__item" value="Janeiro">Janeiro</option>
-        <option class="header__month__item" value="Fevereiro">Fevereiro</option>
-        <option class="header__month__item" value="Março">Março</option>
-        <option class="header__month__item" value="Abril">Abril</option>
-        <option class="header__month__item" value="Maio">Maio</option>
-        <option class="header__month__item" value="Junho">Junho</option>
-        <option class="header__month__item" value="Julho">Julho</option>
-        <option class="header__month__item" value="Agosto">Agosto</option>
-        <option class="header__month__item" value="Setembro">Setembro</option>
-        <option class="header__month__item" value="Outubro">Outubro</option>
-        <option class="header__month__item" value="Novembro">Novembro</option>
-        <option class="header__month__item" value="Dezembro">Dezembro</option>
-      </select>
-    </div>
+    {% include "partials/month.html" %}
 
     <img class="header__filter" src="/img/header-filter.svg" alt="Icone para entrar nos filtros">
   </header>
