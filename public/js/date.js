@@ -8,6 +8,7 @@
     event.preventDefault()
 
     const $target = event.target.closest('.date__item')
+    const positions = $target.getBoundingClientRect()
 
     $dateItemIsActive.classList.remove('date__item--isActive')
     $target.classList.add('date__item--isActive')

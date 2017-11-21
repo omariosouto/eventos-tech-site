@@ -11,7 +11,7 @@
 
 .date__item {
   font-weight: 300;
-  background-color: var(--white);
+  background-color: white;
   width: 60px;
   height: 60px;
   padding: 5px 0;
@@ -19,6 +19,12 @@
   text-align: center;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+.date__item:active {
+  background-color: var(--menu-over);
+  color: white;
+  transition: all 200ms linear;
 }
 
 .date__item__number {
