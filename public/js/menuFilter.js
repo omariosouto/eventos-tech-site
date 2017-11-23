@@ -4,7 +4,8 @@
   const $body = doc.querySelector('body')
   const $wrapHeaderFilter = doc.querySelector('.wrap__header__filter')
   const $wrapMenuFilter = doc.querySelector('#menuFilter')
-
+  const $wrapEvent = doc.querySelector('.wrap__event')
+  
   $wrapMenuFilter.addEventListener('click', (event) => {
     event.cancelBubble = true
   })
@@ -13,6 +14,10 @@
     event.preventDefault()
 
     $wrapMenuFilter.classList.toggle('wrap__menuFilter--isActive')
+
+    if ($wrapMenuFilter.classList.contains('wrap__menuFilter--isActive')) {
+      $wrapEvent.style.overflow = 'visible'      
+    }
   })
 
   $body.addEventListener('click', (event) => {

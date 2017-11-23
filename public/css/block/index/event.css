@@ -6,6 +6,7 @@
 .event {
   padding: 38px 15px 38px 75px;
   position: relative;
+  z-index: -1;
 }
 
 .event:not(:last-child) {
