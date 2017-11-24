@@ -8,8 +8,7 @@
   bottom: 0;
   right: 0;
   box-shadow: -3px 0px 10px 0px #555;
-  z-index: 3;
-  
+  z-index: 3;  
   
   transition: 200ms transform linear;
 }
@@ -52,7 +51,7 @@
   cursor: pointer;
 }
 .menuFilter__label:last-of-type {
-  margin-bottom: 80px;
+  margin-bottom: 150px;
 }
 
 .menuFilter__label::before,
