@@ -7,9 +7,20 @@
 }
 
 .formNewEvent--day {
-  margin-bottom: 0;
-  height: auto;
-  overflow: unset;
+  box-sizing: border-box;
+  height: calc(100vh - 111px);
+  padding: 0;
+  padding-bottom: 26px;
+}
+
+.wrap__formNewEvent__informacoes {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.wrap__formNewEvent__informacoes:not(:last-of-type) {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid var(--border);
 }
 
 .formNewEvent__inscricoes__title {
@@ -112,6 +123,8 @@
   color: var(--dark);
   outline: none;
   transition: .2s ease-in-out;
+  background-color: transparent;
+  border-radius: 0;
 }
 
 .formNewEvent__informacoes__label {
@@ -121,6 +134,7 @@
   color: var(--light);
   cursor: text;
   transition: .2s ease-in-out;
+  z-index: -1;
 }
 
 .formNewEvent__informacoes__input--focus {

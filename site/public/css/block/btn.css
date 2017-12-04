@@ -1,0 +1,11 @@
+.btn--remove {
+  font-size: 20px;
+  color: var(--logo);
+  background-color: transparent;
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  border: 1px solid var(--logo);
+  position: absolute;
+  right: 20px;
+}

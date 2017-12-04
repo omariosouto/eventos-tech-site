@@ -7,29 +7,51 @@
     </header>
 
     <form class="formNewEvent formNewEvent--day" action="index.html" method="post">
+      <fieldset id="dateTemplate" class="wrap__formNewEvent__informacoes" style="display: none">
+        <button class="btn--remove">X</button>
 
-      <div class="formNewEvent__informacoes">
-        <input id="day" type="text" class="formNewEvent__informacoes__input" required data-number>
-        <label for="day" class="formNewEvent__informacoes__label">Dia</label>
-        <span class="formNewEvent__informacoes__obrigatorio">Obrigatório</span>
-      </div>
+        <div class="formNewEvent__informacoes">
+          <input id="day" type="text" class="formNewEvent__informacoes__input" required data-number>
+          <label for="day" class="formNewEvent__informacoes__label">Dia</label>
+          <span class="formNewEvent__informacoes__obrigatorio">Obrigatório</span>
+        </div>
 
-      <div class="formNewEvent__informacoes">
-        <input id="inicialTime" type="text" class="formNewEvent__informacoes__input" required data-number>
-        <label for="inicialTime" class="formNewEvent__informacoes__label">Horário Inicial</label>
-        <span class="formNewEvent__informacoes__obrigatorio">Obrigatório</span>
-      </div>
+        <div class="formNewEvent__informacoes">
+          <input id="inicialTime" type="text" class="formNewEvent__informacoes__input" required data-number>
+          <label for="inicialTime" class="formNewEvent__informacoes__label">Horário Inicial</label>
+          <span class="formNewEvent__informacoes__obrigatorio">Obrigatório</span>
+        </div>
 
-      <div class="formNewEvent__informacoes">
-        <input id="finalTime" type="text" class="formNewEvent__informacoes__input" required data-number>
-        <label for="finalTime" class="formNewEvent__informacoes__label">Horário Final</label>
-        <span class="formNewEvent__informacoes__obrigatorio">Obrigatório</span>
+        <div class="formNewEvent__informacoes">
+          <input id="finalTime" type="text" class="formNewEvent__informacoes__input" required data-number>
+          <label for="finalTime" class="formNewEvent__informacoes__label">Horário Final</label>
+          <span class="formNewEvent__informacoes__obrigatorio">Obrigatório</span>
+        </div>
+      </fieldset>
+      <fieldset class="wrap__formNewEvent__informacoes">
+        <div class="formNewEvent__informacoes">
+          <input id="day" type="text" class="formNewEvent__informacoes__input" required data-number>
+          <label for="day" class="formNewEvent__informacoes__label">Dia</label>
+          <span class="formNewEvent__informacoes__obrigatorio">Obrigatório</span>
+        </div>
+
+        <div class="formNewEvent__informacoes">
+          <input id="inicialTime" type="text" class="formNewEvent__informacoes__input" required data-number>
+          <label for="inicialTime" class="formNewEvent__informacoes__label">Horário Inicial</label>
+          <span class="formNewEvent__informacoes__obrigatorio">Obrigatório</span>
+        </div>
+
+        <div class="formNewEvent__informacoes">
+          <input id="finalTime" type="text" class="formNewEvent__informacoes__input" required data-number>
+          <label for="finalTime" class="formNewEvent__informacoes__label">Horário Final</label>
+          <span class="formNewEvent__informacoes__obrigatorio">Obrigatório</span>
+        </div>
+      </fieldset>
+
+      <div class="addNewEvent">
+        <a href="#" class="addNewEvent__button">+</a>
       </div>
     </form>
-
-    <div class="addNewEvent">
-      <a href="#" class="addNewEvent__button">+</a>
-    </div>
 
     <footer class="footerNewEvent">
       <a href="/event/wait" class="footerNewEvent__button">
@@ -37,8 +59,9 @@
       </a>
     </footer>
 
-    <script type="text/javascript" src="/js/modificaForm.js"></script>
-    <script type="text/javascript" src="/js/validacao.js"></script>
-
+    <script src="/js/newDate.js"></script>
+    <script src="/js/formNewEvent.js"></script>
+    <script src="/js/modificaForm.js"></script>
+    <script src="/js/validacao.js"></script>
   </body>
 {% endblock %}

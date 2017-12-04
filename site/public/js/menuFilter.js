@@ -5,8 +5,6 @@
   const $wrapHeaderFilter = doc.querySelector('.wrap__header__filter')
   const $wrapMenuFilter = doc.querySelector('#menuFilter')
   const $wrapEvent = doc.querySelector('.wrap__event')
-  const $menuFilterCategory = $wrapMenuFilter.querySelector('.menuFilter__category')
-  const $menuFilterPayment = $wrapMenuFilter.querySelector('.menuFilter__payment')
   
   $wrapMenuFilter.addEventListener('click', (event) => {
     event.cancelBubble = true
@@ -32,26 +30,4 @@
       $wrapMenuFilter.classList.toggle('wrap__menuFilter--isActive')
     }
   })
-
-  $menuFilterCategory.addEventListener('click', selectInputAll)
-  $menuFilterPayment.addEventListener('click', selectInputAll)
-
-  function selectInputAll(event) {
-    const $target = event.target
-
-    if ($target.classList.contains('menuFilter__label--all')) {
-      const $menuFilterCheckebox = this.querySelectorAll('.menuFilter__checbox')
-      const $all = this.querySelector('.menuFilter__checbox--all')
-
-      Array.prototype.forEach.call($menuFilterCheckebox, $item => {
-        if (!$item.classList.contains('menuFilter__checbox--all')) {
-          if ($all.checked) {
-            $item.checked = false
-          } else {
-            $item.checked = true
-          }
-        }
-      })
-    }
-  }
 })(document)
