@@ -43,8 +43,6 @@
       const $menuFilterCheckebox = this.querySelectorAll('.menuFilter__checbox')
       const $all = this.querySelector('.menuFilter__checbox--all')
 
-      console.log('All', $all.checked)
-
       Array.prototype.forEach.call($menuFilterCheckebox, $item => {
         if (!$item.classList.contains('menuFilter__checbox--all')) {
           if ($all.checked) {
