@@ -1,0 +1,163 @@
+.formNewEvent {
+  margin-bottom: 90px;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 100vh;
+  overflow: scroll;
+}
+
+.formNewEvent--day {
+  margin-bottom: 0;
+  height: auto;
+  overflow: unset;
+}
+
+.formNewEvent__inscricoes__title {
+  font-size: 1.833em;
+  color: var(--dark);
+  padding-top: 24px;
+  padding-bottom: 10px;
+}
+
+.formNewEvent__inscricoes__radio {
+  display: none;
+}
+
+.formNewEvent__inscricoes__label {
+  font-size: 1.833em;
+  height: 28px;
+  position: relative;
+  padding-left: 40px;
+  padding-right: 30px;
+  cursor: pointer;
+}
+
+.formNewEvent__inscricoes__label::before,
+.formNewEvent__inscricoes__label::after {
+  content: "";
+  display: inline-block;
+  box-sizing: border-box;
+  border: solid 1px var(--medium);
+  border-radius: 50%;
+  will-change: border;
+}
+
+.formNewEvent__inscricoes__label::before {
+  width: 26px;
+  height: 26px;
+  margin-right: 10px;
+  position: absolute;
+  left: 0;
+  z-index: 2;
+}
+
+.formNewEvent__inscricoes__label::after {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  z-index: -1;
+}
+
+.formNewEvent__inscricoes__label--free {
+  color: var(--free);
+}
+
+.formNewEvent__inscricoes__label--free::before,
+.formNewEvent__inscricoes__label--free::after {
+  border-color: var(--free);
+}
+
+.formNewEvent__inscricoes__radio--free:checked + .formNewEvent__inscricoes__label--free::after {
+  background-color: var(--free);
+}
+
+.formNewEvent__inscricoes__label--payment {
+  color: var(--payment);
+}
+
+.formNewEvent__inscricoes__label--payment::before,
+.formNewEvent__inscricoes__label--payment::after {
+  border-color: var(--payment);
+}
+
+.formNewEvent__inscricoes__radio--payment:checked + .formNewEvent__inscricoes__label--payment::after {
+  background-color: var(--payment);
+}
+
+.formNewEvent__informacoes {
+  position: relative;
+  height: 25px;
+  margin-top: 35px;
+}
+
+.formNewEvent__informacoes:last-child {
+  margin-bottom: 200px;
+}
+
+.formNewEvent--day .formNewEvent__informacoes:last-child {
+  margin-bottom: 0;
+}
+
+.formNewEvent__informacoes__input,
+.formNewEvent__informacoes__label {
+  font-size: 1.833em;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.formNewEvent__informacoes__input {
+  border-bottom: solid 2px var(--medium);
+  color: var(--dark);
+  outline: none;
+  transition: .2s ease-in-out;
+}
+
+.formNewEvent__informacoes__label {
+  position: absolute;
+  top: -2px;
+  left: 0;
+  color: var(--light);
+  cursor: text;
+  transition: .2s ease-in-out;
+}
+
+.formNewEvent__informacoes__input--focus {
+  border-bottom: solid 2px var(--dark);
+  transition: .2s ease-in-out;
+}
+
+.formNewEvent__informacoes__label--focus {
+  font-size: 1em;
+  color: var(--medium);
+  top: -15px;
+  pointer-events: none;
+  transition: .2s ease-in-out;
+}
+
+.formNewEvent__informacoes__obrigatorio,
+.formNewEvent__informacoes__caracter {
+  display: block;
+  text-align: right;
+}
+.formNewEvent__informacoes__obrigatorio {
+  color: var(--required);
+}
+
+.formNewEvent__informacoes__caracter {
+  color: var(--dark);
+}
+
+.formNewEvent__informacoes__senha {
+  background-image: url(../../../img/block/new-profile/eye-see.svg);
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-position: center;
+  text-indent: -9999px;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 2px;
+  bottom: -6px;
+}
