@@ -18,3 +18,7 @@ select {
 button {
   border-radius: 0;
 }
+
+input:invalid {
+  box-shadow: none;
+}

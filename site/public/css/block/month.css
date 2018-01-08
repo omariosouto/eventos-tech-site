@@ -1,9 +1,8 @@
 .wrap__month {
   position: absolute
 }
-.wrap__month::after {
-  content: "";
-  display: inline-block;
+label[for=month] {
+  display: block;
   border-top: 5px solid var(--light);
   border-bottom: 5px solid transparent;
   border-left: 5px solid transparent;
@@ -11,7 +10,8 @@
   width: 0;
   position: absolute;
   top: 30px;
-  right: 0;
+  right: -12px;
+  text-indent: -9999px;
 }
 
 .month {

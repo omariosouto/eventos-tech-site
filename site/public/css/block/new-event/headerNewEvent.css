@@ -4,8 +4,12 @@
   height: 61px;
   box-sizing: border-box;
   border-bottom: solid 1px var(--border);
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
   line-height: 61px;
+  background-color: white;
+  z-index: 10;
 }
 
 .headerNewEvent__buttonPrevious {

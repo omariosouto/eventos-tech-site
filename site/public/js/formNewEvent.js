@@ -12,4 +12,10 @@
       $target.parentNode.remove()
     }
   })
+
+  $formNewEvent.addEventListener('blur', event => {
+    const $target = event.target
+
+    console.log($target.getAttribute('required'))
+  })
 })(document)

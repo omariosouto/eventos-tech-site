@@ -1,26 +1,27 @@
 .formNewEvent {
   margin-bottom: 90px;
-  padding-left: 20px;
-  padding-right: 20px;
-  height: 100vh;
-  overflow: scroll;
 }
 
 .formNewEvent--day {
   box-sizing: border-box;
   height: calc(100vh - 111px);
-  padding: 0;
   padding-bottom: 26px;
 }
 
-.wrap__formNewEvent__informacoes {
+.formNewEvent__inscricoes {
   padding-left: 20px;
   padding-right: 20px;
 }
+
+.wrap__formNewEvent__informacoes {
+  position: relative;
+}
 .wrap__formNewEvent__informacoes:not(:last-of-type) {
   padding-top: 20px;
-  padding-bottom: 40px;
-  border-bottom: 1px solid var(--border);
+}
+
+.wrap__formNewEvent__informacoes:not(:nth-child(2)) .addNewEvent__button{
+  display: none;
 }
 
 .formNewEvent__inscricoes__title {
@@ -101,6 +102,8 @@
   position: relative;
   height: 25px;
   margin-top: 35px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .formNewEvent__informacoes:last-child {
@@ -126,6 +129,9 @@
   background-color: transparent;
   border-radius: 0;
 }
+.formNewEvent__informacoes__input.required {
+  border-color: var(--logo);
+}
 
 .formNewEvent__informacoes__label {
   position: absolute;
@@ -135,6 +141,8 @@
   cursor: text;
   transition: .2s ease-in-out;
   z-index: -1;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .formNewEvent__informacoes__input--focus {
@@ -172,6 +180,6 @@
   width: 30px;
   height: 30px;
   position: absolute;
-  right: 2px;
+  right: 16px;
   bottom: -6px;
 }

@@ -1,9 +1,9 @@
 {% extends "templates/base.html" %}
 {% block content %}
-  <body>
+  <body class="page-event">
     <header class="headerNewEvent">
       <a href="/event/category" class="headerNewEvent__buttonPrevious">Voltar</a>
-      <label class="headerNewEvent__label">Dias e Horários do Evento</label>
+      <label class="headerNewEvent__label">Datas e Horários do Evento</label>
     </header>
 
     <form class="formNewEvent formNewEvent--day" action="index.html" method="post">
@@ -12,7 +12,7 @@
 
         <div class="formNewEvent__informacoes">
           <input id="day" type="text" class="formNewEvent__informacoes__input" required data-number>
-          <label for="day" class="formNewEvent__informacoes__label">Dia</label>
+          <label for="day" class="formNewEvent__informacoes__label">Data</label>
           <span class="formNewEvent__informacoes__obrigatorio">Obrigatório</span>
         </div>
 
@@ -27,11 +27,15 @@
           <label for="finalTime" class="formNewEvent__informacoes__label">Horário Final</label>
           <span class="formNewEvent__informacoes__obrigatorio">Obrigatório</span>
         </div>
+
+        <div class="addNewEvent">
+            <a href="#" class="addNewEvent__button">+</a>
+          </div>
       </fieldset>
       <fieldset class="wrap__formNewEvent__informacoes">
         <div class="formNewEvent__informacoes">
           <input id="day" type="text" class="formNewEvent__informacoes__input" required data-number>
-          <label for="day" class="formNewEvent__informacoes__label">Dia</label>
+          <label for="day" class="formNewEvent__informacoes__label">Data</label>
           <span class="formNewEvent__informacoes__obrigatorio">Obrigatório</span>
         </div>
 
@@ -46,11 +50,11 @@
           <label for="finalTime" class="formNewEvent__informacoes__label">Horário Final</label>
           <span class="formNewEvent__informacoes__obrigatorio">Obrigatório</span>
         </div>
-      </fieldset>
 
-      <div class="addNewEvent">
-        <a href="#" class="addNewEvent__button">+</a>
-      </div>
+        <div class="addNewEvent">
+            <a href="#" class="addNewEvent__button">+</a>
+          </div>
+      </fieldset>
     </form>
 
     <footer class="footerNewEvent">
