@@ -1,13 +1,14 @@
 ;(function () {
   "use strict";
 
-  var listaDeInputs = document.querySelectorAll(".formNewEvent__informacoes__input")
-
-  for (var i=0 ; i<listaDeInputs.length ; i++) {
-    listaDeInputs[i].addEventListener("focus" , comFoco)
-    listaDeInputs[i].addEventListener("blur" , semFoco)
-  }
-
+  let formularioDeDias = document.querySelector(".formNewEvent--day");
+  formularioDeDias.addEventListener("click", function(event) {
+    if(event.target.classList.contains("formNewEvent__informacoes__input")) {
+      comFoco(event);
+      event.target.addEventListener("blur" , semFoco)
+    }
+    event.preventDefault();
+  })
 
   function comFoco(event) {
     var input = event.target
