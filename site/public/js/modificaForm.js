@@ -1,8 +1,8 @@
 ;(function () {
   "use strict";
 
-  let formDays = document.querySelector(".formNewEvent");
-  formDays.addEventListener("click", function(event) {
+  let form = document.querySelector(".formNewEvent");
+  form.addEventListener("click", function(event) {
     if(event.target.classList.contains("formNewEvent__informacoes__input")) {
       onFocus(event);
       event.target.addEventListener("blur" , focusOut)
