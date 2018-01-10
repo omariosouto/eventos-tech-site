@@ -1,13 +1,13 @@
 ;(function () {
   "use strict";
 
-  let formDays = document.querySelector(".formNewEvent--day");
+  let formDays = document.querySelector(".formNewEvent");
   formDays.addEventListener("click", function(event) {
     if(event.target.classList.contains("formNewEvent__informacoes__input")) {
       onFocus(event);
       event.target.addEventListener("blur" , focusOut)
+      event.preventDefault();
     }
-    event.preventDefault();
   })
 
   function onFocus(event) {
