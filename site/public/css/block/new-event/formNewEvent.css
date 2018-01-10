@@ -4,7 +4,7 @@
 
 .formNewEvent--day {
   box-sizing: border-box;
-  height: calc(100vh - 111px);
+  min-height: calc(100vh - 111px);
   padding-bottom: 26px;
 }
 
