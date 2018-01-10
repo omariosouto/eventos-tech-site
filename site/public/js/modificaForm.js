@@ -1,16 +1,16 @@
 ;(function () {
   "use strict";
 
-  let formularioDeDias = document.querySelector(".formNewEvent--day");
-  formularioDeDias.addEventListener("click", function(event) {
+  let formDays = document.querySelector(".formNewEvent--day");
+  formDays.addEventListener("click", function(event) {
     if(event.target.classList.contains("formNewEvent__informacoes__input")) {
-      comFoco(event);
-      event.target.addEventListener("blur" , semFoco)
+      onFocus(event);
+      event.target.addEventListener("blur" , focusOut)
     }
     event.preventDefault();
   })
 
-  function comFoco(event) {
+  function onFocus(event) {
     var input = event.target
     var label = input.parentNode.querySelector(".formNewEvent__informacoes__label")
 
@@ -19,7 +19,7 @@
   }
 
 
-  function semFoco(event) {
+  function focusOut(event) {
     var input = event.target
     var label = input.parentNode.querySelector(".formNewEvent__informacoes__label")
 
