@@ -1,15 +1,16 @@
 ;(function () {
   "use strict";
 
-  var listaDeInputs = document.querySelectorAll(".formNewEvent__informacoes__input")
+  let formDays = document.querySelector(".formNewEvent--day");
+  formDays.addEventListener("click", function(event) {
+    if(event.target.classList.contains("formNewEvent__informacoes__input")) {
+      onFocus(event);
+      event.target.addEventListener("blur" , focusOut)
+    }
+    event.preventDefault();
+  })
 
-  for (var i=0 ; i<listaDeInputs.length ; i++) {
-    listaDeInputs[i].addEventListener("focus" , comFoco)
-    listaDeInputs[i].addEventListener("blur" , semFoco)
-  }
-
-
-  function comFoco(event) {
+  function onFocus(event) {
     var input = event.target
     var label = input.parentNode.querySelector(".formNewEvent__informacoes__label")
 
@@ -18,7 +19,7 @@
   }
 
 
-  function semFoco(event) {
+  function focusOut(event) {
     var input = event.target
     var label = input.parentNode.querySelector(".formNewEvent__informacoes__label")
 
