@@ -145,6 +145,10 @@
   padding-right: 20px;
 }
 
+.formNewEvent__informacoes__label.required {
+  color: var(--required);
+}
+
 .formNewEvent__informacoes__input--focus {
   border-bottom: solid 2px var(--dark);
   transition: .2s ease-in-out;

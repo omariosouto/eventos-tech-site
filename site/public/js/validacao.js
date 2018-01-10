@@ -13,4 +13,25 @@
     }
   }
 
+  let form = document.querySelector(".formNewEvent")
+  form.addEventListener("click", function(event) {
+    const target = event.target;
+    if(target.classList.contains("formNewEvent__informacoes__input") && target.hasAttribute("required")) {
+      target.addEventListener("blur" , focusOut)
+    }
+  })
+
+  function focusOut(event) {
+    var input = event.target
+    var label = input.parentNode.querySelector(".formNewEvent__informacoes__label")
+
+    if (input.value=="") {
+      input.classList.add("required")
+      label.classList.add("required")
+    } else {
+      input.classList.remove("required")
+      label.classList.remove("required")
+    }
+  }
+
 }) ()
