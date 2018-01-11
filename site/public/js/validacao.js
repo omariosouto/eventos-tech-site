@@ -25,7 +25,7 @@
     var input = event.target
     var label = input.parentNode.querySelector(".formNewEvent__informacoes__label")
 
-    if (input.value=="") {
+    if (input.value.trim() == "") {
       input.classList.add("required")
       label.classList.add("required")
     } else {
