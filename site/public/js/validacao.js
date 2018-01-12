@@ -2,15 +2,16 @@
 ;(function () {
   "use strict";
 
-  var listaDeInputsNumber = document.querySelectorAll("[data-number]")
-
-  for (let i=0; i<listaDeInputsNumber.length; i++) {
-    listaDeInputsNumber[i].addEventListener("input" , validacaoNumber)
-
-    function validacaoNumber () {
-      listaDeInputsNumber[i].value = listaDeInputsNumber[i].value
-                                        .replace(/[^:\/0-9]/g,"")
+  let form = document.querySelector(".formNewEvent")
+  form.addEventListener("click", function(event) {
+    const target = event.target;
+    if(target.hasAttribute("data-number")) {
+      target.addEventListener("input" , validacaoNumber);
     }
+  })
+
+  function validacaoNumber (event) {
+    event.target.value = event.target.value.replace(/[^:\/0-9]/g,"")
   }
 
 }) ()
