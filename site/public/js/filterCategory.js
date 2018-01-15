@@ -12,11 +12,11 @@
     const $target = event.target
 
     if ($target.classList.contains('menuFilter__label--all')) {
-      const $menuFilterCheckebox = this.querySelectorAll('.menuFilter__checbox')
-      const $all = this.querySelector('.menuFilter__checbox--all')
+      const $menuFilterCheckebox = this.querySelectorAll('.menuFilter__checkbox')
+      const $all = this.querySelector('.menuFilter__checkbox--all')
 
       Array.prototype.forEach.call($menuFilterCheckebox, $item => {
-        if (!$item.classList.contains('menuFilter__checbox--all')) {
+        if (!$item.classList.contains('menuFilter__checkbox--all')) {
           if ($all.checked) {
             $item.checked = false
           } else {
