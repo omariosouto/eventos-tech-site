@@ -171,6 +171,10 @@
   color: var(--dark);
 }
 
+.formNewEvent__informacoes__caracter--limit {
+  color: var(--required);
+}
+
 .formNewEvent__informacoes__senha {
   background-image: url(../../../img/block/new-profile/eye-see.svg);
   background-repeat: no-repeat;
